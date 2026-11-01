@@ -1,0 +1,15 @@
+framework:
+    messenger:
+        failure_transport: failed
+        transports:
+            # Přeindexování běží asynchronně: změna dokumentu → zpráva → worker (bin/console messenger:consume async).
+            async:
+                dsn: '%env(MESSENGER_TRANSPORT_DSN)%'
+                retry_strategy:
+                    max_retries: 3
+                    delay: 2000
+                    multiplier: 3
+            sync: 'sync://'
+            failed: 'doctrine://default?queue_name=failed&auto_setup=0'
+        routing:
+            App\Indexing\Message\ReindexDocument: async

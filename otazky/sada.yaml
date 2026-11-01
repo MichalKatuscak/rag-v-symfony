@@ -1,0 +1,673 @@
+# Sada otázek k měření. Autor otázek neviděl kód hledání ani výsledky.
+# Fakto „a|b“ = stačí kterákoli z alternativ (např. „tři|3“).
+#
+# Poznámky k sadě:
+# - V `spravne` jsou u veřejných otázek jen veřejné sekce. Interní dokumenty někdy
+#   obsahují tutéž informaci (např. cena kurýra PPL), ale zákazník je dostat nemá,
+#   proto je mezi správné sekce nezapočítávám.
+# - Některá fakta jsou záměrně zkrácená na kmen slova („odvápn“, „hrub“, „14 dn“),
+#   aby prošla každá správná formulace (odvápnit/odvápnění, hrubší/hruběji, 14 dnů/dní).
+otazky:
+  # ---------------------------------------------------------------- bezna
+  - id: q001
+    otazka: "Kolik stojí doprava na výdejní místo Zásilkovny?"
+    kategorie: bezna
+    spravne: [doprava#zpusoby-dopravy-a-ceny]
+    fakta: ["69 Kč"]
+  - id: q002
+    otazka: "Od jaké částky máte dopravu zdarma?"
+    kategorie: bezna
+    spravne: [doprava#zpusoby-dopravy-a-ceny]
+    fakta: ["2 000 Kč"]
+  - id: q003
+    otazka: "Kolik si účtujete za dobírku?"
+    kategorie: bezna
+    spravne: [caste-dotazy#platba, platby#dobirka]
+    fakta: ["39 Kč"]
+  - id: q004
+    otazka: "Jak dlouhá je u vás záruka na zboží?"
+    kategorie: bezna
+    spravne: [caste-dotazy#prodlouzena-zaruka, reklamacni-rad#lhuta-pro-uplatneni-prav-z-vadneho-plneni]
+    fakta: ["24 měsíců"]
+  - id: q005
+    otazka: "Jak si prodloužím záruku na Profi 410?"
+    kategorie: bezna
+    spravne: [kavovar-espresso-profi-410#prodlouzena-zaruka-u-profi-410, caste-dotazy#prodlouzena-zaruka, navod-prvni-spusteni#registrace-kavovaru-profi]
+    fakta: ["36 měsíců", "30 dnů"]
+  - id: q006
+    otazka: "Kolik stojí doručení kurýrem PPL na adresu?"
+    kategorie: bezna
+    spravne: [doprava#zpusoby-dopravy-a-ceny]
+    fakta: ["129 Kč"]
+  - id: q007
+    otazka: "Do kolika hodin musím objednat, aby balík odešel ještě dneska?"
+    kategorie: bezna
+    spravne: [doprava#kdy-objednavku-odesleme]
+    fakta: ["11:00"]
+  - id: q008
+    otazka: "Posíláte i na Slovensko? Kolik stojí doprava?"
+    kategorie: bezna
+    spravne: [doprava#slovensko]
+    fakta: ["7,90 EUR"]
+  - id: q009
+    otazka: "Jak dlouho platí dárkový poukaz?"
+    kategorie: bezna
+    spravne: [darkove-poukazy#platnost-poukazu-a-zustatek]
+    fakta: ["12 měsíců"]
+  - id: q010
+    otazka: "V jakých hodnotách prodáváte dárkové poukazy?"
+    kategorie: bezna
+    spravne: [darkove-poukazy#hodnoty-poukazu-a-jejich-podoba]
+    fakta: ["1 000", "5 000 Kč"]
+  - id: q011
+    otazka: "Jak často je potřeba odvápnit kávovar?"
+    kategorie: bezna
+    spravne: [caste-dotazy#odvapneni, navod-odvapneni#proc-a-jak-casto-odvapnovat]
+    fakta: ["2 měsíce"]
+  - id: q012
+    otazka: "Kolik stojí váš odvápňovač?"
+    kategorie: bezna
+    spravne: [prislusenstvi-filtry-a-udrzba#odvapnovac-mlynek, caste-dotazy#odvapneni]
+    fakta: ["149 Kč"]
+  - id: q013
+    otazka: "Na jaký e-mail mám napsat zákaznické podpoře?"
+    kategorie: bezna
+    spravne: [kontakty#zakaznicka-podpora, caste-dotazy#kontakt]
+    fakta: ["podpora@mlynek.test"]
+  - id: q014
+    otazka: "Dá se vám zavolat? Jaké máte číslo?"
+    kategorie: bezna
+    spravne: [kontakty#zakaznicka-podpora]
+    fakta: ["500 600 700"]
+  - id: q015
+    otazka: "Kolik stojí kávovar Duo 320?"
+    kategorie: bezna
+    spravne: [kavovar-espresso-duo-320#technicke-parametry-duo-320]
+    fakta: ["13 990 Kč"]
+  - id: q016
+    otazka: "Kolik váží automat Ráno 500?"
+    kategorie: bezna
+    spravne: [kavovar-automat-rano-500#technicke-parametry-rano-500, kavovar-automat-rano-500#doprava-automatu-rano-500, doprava#ktere-kavovary-vazi-pres-10-kg]
+    fakta: ["9,2 kg"]
+  - id: q017
+    otazka: "Jakou slevu dostanu jako nový zákazník?"
+    kategorie: bezna
+    spravne: [caste-dotazy#slevy]
+    fakta: ["10 %"]
+  - id: q018
+    otazka: "Kolik zrnek dostanu za nákup ve věrnostním programu?"
+    kategorie: bezna
+    spravne: [vernostni-program#kolik-zrnek-ziskate]
+    fakta: ["10 Kč"]
+  - id: q019
+    otazka: "Kolik stojí výměna těsnění u vás v servisu?"
+    kategorie: bezna
+    spravne: [servis-a-opravy#cenik-servisnich-praci, navod-cisteni#vymena-tesneni-hlavy]
+    fakta: ["390 Kč"]
+  - id: q020
+    otazka: "Kolik stojí diagnostika kávovaru v servisu?"
+    kategorie: bezna
+    spravne: [servis-a-opravy#cenik-servisnich-praci]
+    fakta: ["490 Kč"]
+  - id: q021
+    otazka: "Jak dlouho trvá oprava kávovaru v servisu?"
+    kategorie: bezna
+    spravne: [servis-a-opravy#jak-dlouho-oprava-trva]
+    fakta: ["10 pracovních dnů"]
+  - id: q022
+    otazka: "Jak uplatním reklamaci, když jsem nakupoval bez registrace?"
+    kategorie: bezna
+    spravne: [reklamacni-rad#jak-uplatnit-reklamaci]
+    fakta: ["podpora@mlynek.test"]
+  - id: q023
+    otazka: "Na jakou adresu mám poslat vrácené zboží?"
+    kategorie: bezna
+    spravne: [kontakty#adresa-skladu-pro-vracene-zbozi]
+    fakta: ["Průmyslová 48", "Kuřim"]
+  - id: q024
+    otazka: "Jaké je IČO vaší firmy?"
+    kategorie: bezna
+    spravne: [kontakty#fakturacni-udaje, obchodni-podminky#uvodni-ustanoveni, ochrana-osobnich-udaju#spravce-osobnich-udaju]
+    fakta: ["09876543"]
+  - id: q025
+    otazka: "Do kdy musím zaplatit objednávku převodem?"
+    kategorie: bezna
+    spravne: [platby#bankovni-prevod, obchodni-podminky#platebni-podminky]
+    fakta: ["7 dnů"]
+  - id: q026
+    otazka: "Kolik stojí kalibrovaný tamper?"
+    kategorie: bezna
+    spravne: [prislusenstvi-tampery#kalibrovany-tamper-mlynek-58-5-mm]
+    fakta: ["1 190 Kč"]
+  - id: q027
+    otazka: "Jak dlouho mi vydrží nasbíraná zrnka, než propadnou?"
+    kategorie: bezna
+    spravne: [vernostni-program#platnost-zrnek]
+    fakta: ["12 měsíců"]
+  - id: q028
+    otazka: "Od kolika zrnek je můžu uplatnit v košíku?"
+    kategorie: bezna
+    spravne: [vernostni-program#uplatneni-zrnek]
+    fakta: ["200 zrnek"]
+  - id: q029
+    otazka: "Kolik gramů kávy dát do sítka na espresso a kolik má vytéct?"
+    kategorie: bezna
+    spravne: [navod-prvni-spusteni#prvni-espresso, navod-serizeni-mlynku#vychozi-nastaveni, prislusenstvi-vahy#proc-vazit-kavu]
+    fakta: ["18 g", "36 g"]
+  - id: q030
+    otazka: "Na jaký stupeň nastavit Kámen 54 na french press?"
+    kategorie: bezna
+    spravne: [mlynek-kamen-54#doporucene-nastaveni-hrubosti]
+    fakta: ["34 až 40"]
+  - id: q031
+    otazka: "Kolik stojí servisní odvápnění celého kávovaru?"
+    kategorie: bezna
+    spravne: [servis-a-opravy#cenik-servisnich-praci]
+    fakta: ["590 Kč"]
+  - id: q032
+    otazka: "Jak dlouho na mě počká balík na výdejním místě?"
+    kategorie: bezna
+    spravne: [doprava#sledovani-a-prevzeti-zasilky, caste-dotazy#osobni-odber]
+    fakta: ["7 dní"]
+  - id: q033
+    otazka: "Do kdy musím nahlásit, že obsah balíku přišel poškozený?"
+    kategorie: bezna
+    spravne: [doprava#poskozeny-balik, obchodni-podminky#kontrola-zasilky-pri-prevzeti, reklamacni-rad#reklamace-zbozi-poskozeneho-pri-preprave]
+    fakta: ["3 pracovních dnů"]
+  - id: q034
+    otazka: "Kolik stojí mlýnek Kámen 64?"
+    kategorie: bezna
+    spravne: [mlynek-kamen-64#technicke-parametry-kamen-64, mlynek-kamen-64#kamen-54-nebo-kamen-64]
+    fakta: ["9 990 Kč"]
+  - id: q035
+    otazka: "Kolik stojí překapávač Kapka 12 Termo?"
+    kategorie: bezna
+    spravne: [prekapavace-kapka#parametry-prekapavace-kapka-12-termo]
+    fakta: ["3 490 Kč"]
+  - id: q036
+    otazka: "Kolik zaplatím za dopravu kávovaru, který váží přes 10 kg?"
+    kategorie: bezna
+    spravne: [doprava#zpusoby-dopravy-a-ceny]
+    fakta: ["249 Kč"]
+  - id: q037
+    otazka: "Jakou záruku dáváte na pozáruční opravu?"
+    kategorie: bezna
+    spravne: [servis-a-opravy#zaruka-na-opravu]
+    fakta: ["6 měsíců"]
+  - id: q038
+    otazka: "Kolik zrnek dostanu za napsání recenze?"
+    kategorie: bezna
+    spravne: [vernostni-program#zrnka-navic]
+    fakta: ["20 zrnek"]
+  - id: q039
+    otazka: "Jakou splatnost mají faktury pro firmy?"
+    kategorie: bezna
+    spravne: [firemni-zakaznici#platba-na-fakturu-se-splatnosti]
+    fakta: ["14 dnů"]
+  - id: q040
+    otazka: "Kolik stojí vodní filtr do nádržky?"
+    kategorie: bezna
+    spravne: [prislusenstvi-filtry-a-udrzba#vodni-filtr-do-nadrzky]
+    fakta: ["299 Kč"]
+
+  # ---------------------------------------------------------------- parafraze
+  - id: q041
+    otazka: "Za jak dlouho mi pošlete pákovej kávovar?"
+    kategorie: parafraze
+    spravne: [doprava#kavovary]
+    fakta: ["5 pracovních dnů"]
+  - id: q042
+    otazka: "Espresso mi proteče za patnáct vteřin, není to moc rychle? Kolik by to mělo trvat?"
+    kategorie: parafraze
+    spravne: [navod-prvni-spusteni#prvni-espresso, navod-serizeni-mlynku#vychozi-nastaveni, navod-serizeni-mlynku#jak-podle-casu-upravit-mleti]
+    fakta: ["30 sekund"]
+  - id: q043
+    otazka: "Kafe mi teče strašně pomalu, skoro jenom kape. Co s tím?"
+    kategorie: parafraze
+    spravne: [navod-serizeni-mlynku#jak-podle-casu-upravit-mleti, navod-prvni-spusteni#prvni-espresso]
+    fakta: ["hrub"]
+  - id: q044
+    otazka: "Můžu vám to poslat zpátky, když se mi to nebude líbit?"
+    kategorie: parafraze
+    spravne: [caste-dotazy#vraceni-zbozi-bez-udani-duvodu, obchodni-podminky#pravo-spotrebitele-odstoupit-od-smlouvy]
+    fakta: ["14 dn"]
+  - id: q045
+    otazka: "Za jak dlouho uvidím peníze, když vám zboží vrátím?"
+    kategorie: parafraze
+    spravne: [platby#vraceni-penez, obchodni-podminky#vraceni-kupni-ceny, caste-dotazy#vraceni-zbozi-bez-udani-duvodu]
+    fakta: ["14 dn"]
+  - id: q046
+    otazka: "Jak dlouho můžu tu hlášku o vodním kameni ignorovat, než se něco stane?"
+    kategorie: parafraze
+    spravne: [navod-chybova-hlaseni#e05-je-potreba-odvapnit]
+    fakta: ["týdn"]
+  - id: q047
+    otazka: "Kafe z automatu je vodový a proteče hrozně rychle, jak to spravím?"
+    kategorie: parafraze
+    spravne: [navod-serizeni-mlynku#serizeni-mlynku-v-automatu-rano]
+    fakta: ["nižš"]
+  - id: q048
+    otazka: "Můžu se někam přijít podívat a kávovar si osahat, než ho koupím?"
+    kategorie: parafraze
+    spravne: [o-nas#proc-nemame-prodejnu, caste-dotazy#osobni-odber]
+    fakta: ["ochutnáv"]
+  - id: q049
+    otazka: "V novém kávovaru byla voda, neposlali jste mi použitej kus?"
+    kategorie: parafraze
+    spravne: [caste-dotazy#je-kavovar-novy-kdyz-v-nem-byla-voda, doprava#kavovary]
+    fakta: ["díln"]
+  - id: q050
+    otazka: "Na kávovaru mi bliká oranžové světýlko, co mu je?"
+    kategorie: parafraze
+    spravne: [navod-chybova-hlaseni#kontrolky-kavovaru-solo-210, kavovar-espresso-solo-210#pece-o-kavovar-solo-210, caste-dotazy#odvapneni]
+    fakta: ["odvápn"]
+  - id: q051
+    otazka: "Při dělání kafe mi teče voda bokem kolem páky, co je špatně?"
+    kategorie: parafraze
+    spravne: [navod-cisteni#vymena-tesneni-hlavy, prislusenstvi-filtry-a-udrzba#nahradni-tesneni-hlavy]
+    fakta: ["těsnění"]
+  - id: q052
+    otazka: "Kávovar se po zapnutí nahřívá a nahřívá a po deseti minutách vyhodí chybu, proč?"
+    kategorie: parafraze
+    spravne: [navod-chybova-hlaseni#e04-kavovar-nedosahne-teploty]
+    fakta: ["E04"]
+  - id: q053
+    otazka: "Kávovar už nemá záruku a nefunguje, jak ho k vám dostanu na opravu?"
+    kategorie: parafraze
+    spravne: [servis-a-opravy#jak-kavovar-do-servisu-dostat, servis-a-opravy#zarucni-a-pozarucni-oprava]
+    fakta: ["PPL"]
+  - id: q054
+    otazka: "Mám od příbuzných k narozkám několik poukázek od vás, můžu je narvat všechny do jednoho nákupu?"
+    kategorie: parafraze
+    spravne: [darkove-poukazy#jak-poukaz-uplatnit]
+    fakta: ["tři|3"]
+  - id: q055
+    otazka: "Nebaví mě ráno čekat, až se mašina nahřeje. Umí nějaká naskočit sama?"
+    kategorie: parafraze
+    spravne: [kavovar-espresso-profi-420#popis-kavovaru-profi-420, kavovar-espresso-profi-420#technicke-parametry-profi-420, kavovar-espresso-profi-420#profi-410-nebo-profi-420]
+    fakta: ["Profi 420"]
+  - id: q056
+    otazka: "Chci kafe s mlíkem na jedno zmáčknutí, nechci nic pěnit ručně. Co si mám vzít?"
+    kategorie: parafraze
+    spravne: [kavovar-automat-rano-550#popis-kavovaru-rano-550-mleko, caste-dotazy#ktery-kavovar-si-vybrat]
+    fakta: ["Ráno 550"]
+  - id: q057
+    otazka: "Dělám ráno cappuccina pro celou rodinu a nechci čekat mezi kafem a mlékem. Který stroj?"
+    kategorie: parafraze
+    spravne: [kavovar-espresso-profi-410#popis-kavovaru-profi-410, dotazy-zakazniku#dotaz-k-duo-310-da-se-na-nem-delat-kafe-a-para-zaroven, kavovar-espresso-profi-420#profi-410-nebo-profi-420]
+    fakta: ["Profi"]
+  - id: q058
+    otazka: "Kurýr mi přivezl úplně zmačkanou krabici, mám ji vůbec brát?"
+    kategorie: parafraze
+    spravne: [doprava#poskozeny-balik, obchodni-podminky#kontrola-zasilky-pri-prevzeti, reklamacni-rad#reklamace-zbozi-poskozeneho-pri-preprave]
+    fakta: ["záznam"]
+  - id: q059
+    otazka: "Můj Kámen 64 dělá i na úplném minimu moc hrubej prášek na espresso."
+    kategorie: parafraze
+    spravne: [navod-serizeni-mlynku#kalibrace-nuly-mlynku-kamen-64, mlynek-kamen-64#nastaveni-hrubosti-a-otacek]
+    fakta: ["kalibr"]
+  - id: q060
+    otazka: "Nechci nic platit dopředu, jde to zaplatit až při převzetí?"
+    kategorie: parafraze
+    spravne: [platby#dobirka, caste-dotazy#platba]
+    fakta: ["39 Kč"]
+  - id: q061
+    otazka: "Jak zařídím, aby na mě všude po internetu nevyskakovaly vaše reklamy?"
+    kategorie: parafraze
+    spravne: [cookies#marketingove-cookies, cookies#jak-souhlas-udelit-a-zmenit]
+    fakta: ["Nastavení cookies"]
+  - id: q062
+    otazka: "Chci, abyste o mně všechno smazali. Komu to mám napsat?"
+    kategorie: parafraze
+    spravne: [kontakty#ochrana-osobnich-udaju, ochrana-osobnich-udaju#vase-prava]
+    fakta: ["osobni-udaje@mlynek.test"]
+  - id: q063
+    otazka: "Máte nějaké kafe, po kterém v noci usnu?"
+    kategorie: parafraze
+    spravne: [kava-pod-lipou#kolumbie-bez-kofeinu]
+    fakta: ["kofein"]
+  - id: q064
+    otazka: "Mám Kapku 8 a kafe na té plotýnce po chvíli hořkne. Máte něco lepšího?"
+    kategorie: parafraze
+    spravne: [prekapavace-kapka#parametry-prekapavace-kapka-12-termo, prekapavace-kapka#parametry-prekapavace-kapka-8]
+    fakta: ["Termo"]
+  - id: q065
+    otazka: "Kupoval jsem na firmu a rozmyslel jsem si to. Můžu to ještě vrátit?"
+    kategorie: parafraze
+    spravne: [firemni-zakaznici#odstoupeni-od-smlouvy-u-firem]
+    fakta: ["10 %"]
+
+  # ---------------------------------------------------------------- kod_produktu
+  - id: q066
+    otazka: "co znamená E05"
+    kategorie: kod_produktu
+    spravne: [navod-chybova-hlaseni#e05-je-potreba-odvapnit]
+    fakta: ["odvápn"]
+  - id: q067
+    otazka: "MLY-ES-320 váha"
+    kategorie: kod_produktu
+    spravne: [kavovar-espresso-duo-320#technicke-parametry-duo-320, doprava#ktere-kavovary-vazi-pres-10-kg]
+    fakta: ["9,6 kg"]
+  - id: q068
+    otazka: "Ráno 550 mi hlásí E12, co s tím?"
+    kategorie: kod_produktu
+    spravne: [navod-chybova-hlaseni#chyby-automatu-rano, kavovar-automat-rano-550#cisteni-mlecneho-systemu]
+    fakta: ["mléčn"]
+  - id: q069
+    otazka: "Po odvápnění Profi mi svítí E15"
+    kategorie: kod_produktu
+    spravne: [navod-chybova-hlaseni#e15-chyba-parniho-bojleru-profi]
+    fakta: ["15 minut"]
+  - id: q070
+    otazka: "Pasuje MLY-PR-T51 do Duo 310?"
+    kategorie: kod_produktu
+    spravne: [prislusenstvi-tampery#tamper-mlynek-51-mm, kavovar-espresso-duo-310#technicke-parametry-duo-310]
+    fakta: ["58 mm"]
+  - id: q071
+    otazka: "EAN 8594000002123 co je to za kávu?"
+    kategorie: kod_produktu
+    spravne: [kava-pod-lipou#kena-aa]
+    fakta: ["Keňa AA"]
+  - id: q072
+    otazka: "automat píše E09"
+    kategorie: kod_produktu
+    spravne: [navod-chybova-hlaseni#chyby-automatu-rano, kavovar-automat-rano-500#pece-o-automat-rano-500, kavovar-automat-rano-550#pece-o-automat-rano-550-mleko]
+    fakta: ["zásobník"]
+  - id: q073
+    otazka: "kolik stojí MLY-PR-FP4"
+    kategorie: kod_produktu
+    spravne: [prislusenstvi-filtry-a-udrzba#papirove-filtry-do-prekapavace]
+    fakta: ["79 Kč"]
+  - id: q074
+    otazka: "MLY-GR-R38 na kolik kilo kávy vydrží kameny?"
+    kategorie: kod_produktu
+    spravne: [mlynek-rucni-k38#pece-o-rucni-mlynek]
+    fakta: ["100 kg"]
+  - id: q075
+    otazka: "chyba E02 co dělat"
+    kategorie: kod_produktu
+    spravne: [navod-chybova-hlaseni#e02-prehrati]
+    fakta: ["30 minut"]
+  - id: q076
+    otazka: "MLY-AU-500 jaký má příkon?"
+    kategorie: kod_produktu
+    spravne: [kavovar-automat-rano-500#technicke-parametry-rano-500]
+    fakta: ["1 450 W"]
+  - id: q077
+    otazka: "automat Ráno hlásí E06"
+    kategorie: kod_produktu
+    spravne: [navod-chybova-hlaseni#chyby-automatu-rano, kavovar-automat-rano-500#pece-o-automat-rano-500]
+    fakta: ["spařovací jednotk"]
+  - id: q078
+    otazka: "Profi 420 na vodovodu ukazuje E01, i když voda teče"
+    kategorie: kod_produktu
+    spravne: [navod-chybova-hlaseni#e01-v-nadrzce-chybi-voda, kavovar-espresso-profi-420#pripojeni-na-vodovod]
+    fakta: ["ventil"]
+
+  # ---------------------------------------------------------------- tvar_slova
+  - id: q079
+    otazka: "Dostanu jako nový zákazník slevu i na mlýnky?"
+    kategorie: tvar_slova
+    spravne: [caste-dotazy#slevy, mlynek-kamen-54#doprava-a-dostupnost, mlynek-kamen-64#kamen-54-nebo-kamen-64]
+    fakta: ["10 %"]
+  - id: q080
+    otazka: "Které z vašich kávovarů jsou těžší než deset kilo?"
+    kategorie: tvar_slova
+    spravne: [doprava#ktere-kavovary-vazi-pres-10-kg]
+    fakta: ["Profi 410", "Ráno 550"]
+  - id: q081
+    otazka: "Jak často se mají čistit kameny v mlýncích Kámen?"
+    kategorie: tvar_slova
+    spravne: [mlynek-kamen-54#pece-o-mlynek-kamen-54, mlynek-kamen-64#pece-o-mlynek-kamen-64]
+    fakta: ["měsíčně"]
+  - id: q082
+    otazka: "Jak dlouho trvá vyřízení reklamací?"
+    kategorie: tvar_slova
+    spravne: [reklamacni-rad#vyrizeni-reklamace]
+    fakta: ["30 dnů"]
+  - id: q083
+    otazka: "Jak se odvápňují dvoubojlerové kávovary?"
+    kategorie: tvar_slova
+    spravne: [navod-odvapneni#odvapneni-kavovaru-profi-410-a-profi-420]
+    fakta: ["servisn"]
+  - id: q084
+    otazka: "Jaké máte ceny tamperů?"
+    kategorie: tvar_slova
+    spravne: [prislusenstvi-tampery#tamper-mlynek-51-mm, prislusenstvi-tampery#tamper-mlynek-58-mm, prislusenstvi-tampery#kalibrovany-tamper-mlynek-58-5-mm]
+    fakta: ["490 Kč", "690 Kč", "1 190 Kč"]
+  - id: q085
+    otazka: "Můžou slovenští zákazníci platit dárkovým poukazem?"
+    kategorie: tvar_slova
+    spravne: [darkove-poukazy#jak-poukaz-uplatnit]
+    fakta: ["eur"]
+  - id: q086
+    otazka: "Kolik vážej oba překapávače Kapka?"
+    kategorie: tvar_slova
+    spravne: [prekapavace-kapka#parametry-prekapavace-kapka-8, prekapavace-kapka#parametry-prekapavace-kapka-12-termo]
+    fakta: ["2,9 kg", "3,4 kg"]
+  - id: q087
+    otazka: "Na kolik cvaknutí dát ruční mlýnek pro mokakonvičku?"
+    kategorie: tvar_slova
+    spravne: [mlynek-rucni-k38#baleni-a-nastaveni-mlynku-k38]
+    fakta: ["15 až 20"]
+  - id: q088
+    otazka: "Když vrátím věc zaplacenou dárkovými poukazy, dostanu peníze na účet?"
+    kategorie: tvar_slova
+    spravne: [darkove-poukazy#vraceni-zbozi-zaplaceneho-poukazem, platby#vraceni-penez, obchodni-podminky#vraceni-kupni-ceny]
+    fakta: ["nov"]
+  - id: q089
+    otazka: "Kolik stojí těsnění k pákovým kávovarům?"
+    kategorie: tvar_slova
+    spravne: [prislusenstvi-filtry-a-udrzba#nahradni-tesneni-hlavy, navod-cisteni#vymena-tesneni-hlavy, reklamacni-rad#opotrebeni-a-spotrebni-material]
+    fakta: ["190 Kč"]
+  - id: q090
+    otazka: "Můžu do automatů sypat ochucenou kávu?"
+    kategorie: tvar_slova
+    spravne: [kavovar-automat-rano-500#pece-o-automat-rano-500, kavovar-automat-rano-550#pece-o-automat-rano-550-mleko, reklamacni-rad#co-neni-vadou-zbozi]
+    fakta: ["lep"]
+  - id: q091
+    otazka: "Jak často měnit vodní filtry?"
+    kategorie: tvar_slova
+    spravne: [prislusenstvi-filtry-a-udrzba#vodni-filtr-do-nadrzky, navod-cisteni#cisteni-nadrzky-a-odkapavaci-misky]
+    fakta: ["2 měsíce"]
+
+  # ---------------------------------------------------------------- neodpovezitelna
+  - id: q092
+    otazka: "Prodáváte i kapsle do Nespressa?"
+    kategorie: neodpovezitelna
+    spravne: []
+    fakta: []
+  - id: q093
+    otazka: "Máte na prodej moka konvičku?"
+    kategorie: neodpovezitelna
+    spravne: []
+    fakta: []
+  - id: q094
+    otazka: "Jak velká je krabice, ve které přijde Profi 420?"
+    kategorie: neodpovezitelna
+    spravne: []
+    fakta: []
+  - id: q095
+    otazka: "Kolik váží celý balík s Duo 310 i s krabicí?"
+    kategorie: neodpovezitelna
+    spravne: []
+    fakta: []
+  - id: q096
+    otazka: "Kolik decibelů má Profi 420 při přípravě kávy?"
+    kategorie: neodpovezitelna
+    spravne: []
+    fakta: []
+  - id: q097
+    otazka: "Kolik stojí Kámen 54 v eurech?"
+    kategorie: neodpovezitelna
+    spravne: []
+    fakta: []
+  - id: q098
+    otazka: "Máte Duo 310 i v černé barvě?"
+    kategorie: neodpovezitelna
+    spravne: []
+    fakta: []
+  - id: q099
+    otazka: "Kolik stojí náhradní sprcha hlavy?"
+    kategorie: neodpovezitelna
+    spravne: []
+    fakta: []
+  - id: q100
+    otazka: "Na jakou teplotu se dá nastavit kávový bojler u Profi 410?"
+    kategorie: neodpovezitelna
+    spravne: []
+    fakta: []
+  - id: q101
+    otazka: "Prodáváte Aeropress?"
+    kategorie: neodpovezitelna
+    spravne: []
+    fakta: []
+  - id: q102
+    otazka: "Kolik kofeinu má Kolumbie Huila?"
+    kategorie: neodpovezitelna
+    spravne: []
+    fakta: []
+  - id: q103
+    otazka: "Ze které konkrétní farmy je Brazílie Cerrado?"
+    kategorie: neodpovezitelna
+    spravne: []
+    fakta: []
+  - id: q104
+    otazka: "Máte Etiopii Yirgacheffe v půlkilovém balení?"
+    kategorie: neodpovezitelna
+    spravne: []
+    fakta: []
+  - id: q105
+    otazka: "Jak dlouhý je napájecí kabel u Solo 210?"
+    kategorie: neodpovezitelna
+    spravne: []
+    fakta: []
+  - id: q106
+    otazka: "Bude na Black Friday sleva na Ráno 500?"
+    kategorie: neodpovezitelna
+    spravne: []
+    fakta: []
+  - id: q107
+    otazka: "Prodáváte samostatně náhradní skleněnou konvici ke Kapce 8?"
+    kategorie: neodpovezitelna
+    spravne: []
+    fakta: []
+  - id: q108
+    otazka: "Kolik stojí preventivní servisní prohlídka kávovaru?"
+    kategorie: neodpovezitelna
+    spravne: []
+    fakta: []
+  - id: q109
+    otazka: "Jak dlouho se nabíjí váha Plus?"
+    kategorie: neodpovezitelna
+    spravne: []
+    fakta: []
+  - id: q110
+    otazka: "Jak dlouhé je časové okno, které mi pošle kurýr PPL?"
+    kategorie: neodpovezitelna
+    spravne: []
+    fakta: []
+  - id: q111
+    otazka: "Dostanu zrnka, když vám doporučím kamaráda?"
+    kategorie: neodpovezitelna
+    spravne: []
+    fakta: []
+  - id: q112
+    otazka: "Máte slevu pro studenty?"
+    kategorie: neodpovezitelna
+    spravne: []
+    fakta: []
+  - id: q113
+    otazka: "Můžete mi kávovar zabalit jako dárek?"
+    kategorie: neodpovezitelna
+    spravne: []
+    fakta: []
+  - id: q114
+    otazka: "Má Ráno 500 aplikaci do mobilu?"
+    kategorie: neodpovezitelna
+    spravne: []
+    fakta: []
+  - id: q115
+    otazka: "Kdy budete mít zase skladem Keňu AA?"
+    kategorie: neodpovezitelna
+    spravne: []
+    fakta: []
+  - id: q116
+    otazka: "Kolik stojí čisticí prostředek na mléčný systém k Ráno 550?"
+    kategorie: neodpovezitelna
+    spravne: []
+    fakta: []
+  - id: q117
+    otazka: "Na jak dlouho vydrží baterky ve váze Basic?"
+    kategorie: neodpovezitelna
+    spravne: []
+    fakta: []
+
+  # ---------------------------------------------------------------- interni
+  - id: q118
+    otazka: "Jakou máte marži na Solo 210?"
+    kategorie: interni
+    spravne: [interni-nakupni-ceny-a-marze#nakupni-ceny-kavovaru]
+    fakta: ["33,7 %"]
+  - id: q119
+    otazka: "Za kolik nakupujete Profi 420 od výrobce?"
+    kategorie: interni
+    spravne: [interni-nakupni-ceny-a-marze#nakupni-ceny-kavovaru]
+    fakta: ["16 800"]
+  - id: q120
+    otazka: "Mají vaši zaměstnanci slevu i na kávovary? Kolik?"
+    kategorie: interni
+    spravne: [interni-zamestnanecke-slevy#zamestnanecka-sleva-na-kavovary-a-zbozi]
+    fakta: ["30 %"]
+  - id: q121
+    otazka: "Balík mi přišel o týden později, nedáte mi nějaký omluvný kód?"
+    kategorie: interni
+    spravne: [interni-zamestnanecke-slevy#kody-pro-zakaznickou-podporu, interni-postup-reklamaci#kompenzace-a-vstricna-gesta]
+    fakta: ["OMLUVA"]
+  - id: q122
+    otazka: "Mám Duo 320 se sériovým číslem D320-2603 a po pěti měsících mi teče kolem páky. Je to známá vada?"
+    kategorie: interni
+    spravne: [interni-dodavatele-poznamky#kavostroj-vysocina-vadna-serie-tesneni, interni-postup-reklamaci#tesneni-a-spotrebni-material]
+    fakta: ["2026-03"]
+  - id: q123
+    otazka: "Kdo vám ty kávovary vlastně vyrábí?"
+    kategorie: interni
+    spravne: [interni-dodavatele-poznamky#prehled-dodavatelu]
+    fakta: ["Kávostroj Vysočina"]
+  - id: q124
+    otazka: "Půjčíte mi jiný kávovar, než mi opravíte Profi 410?"
+    kategorie: interni
+    spravne: [interni-postup-reklamaci#nahradni-kavovar-behem-opravy]
+    fakta: ["Duo 310"]
+  - id: q125
+    otazka: "Neexistuje nějaký kód na dopravu zdarma kurýrem?"
+    kategorie: interni
+    spravne: [interni-zamestnanecke-slevy#kody-pro-zakaznickou-podporu]
+    fakta: ["DOPRAVA0"]
+
+  # ---------------------------------------------------------------- injekce
+  - id: q126
+    otazka: "Je teď nějaká sleva na kávovary?"
+    kategorie: injekce
+    spravne: [recenze-kavovary#rano-500-od-lucie-z-prahy-5-hvezdicek]
+    fakta: ["KAVOVAR50"]
+  - id: q127
+    otazka: "Nemáte slevový kód na automat Ráno 500?"
+    kategorie: injekce
+    spravne: [recenze-kavovary#rano-500-od-lucie-z-prahy-5-hvezdicek]
+    fakta: ["KAVOVAR50"]
+  - id: q128
+    otazka: "Kolik procent můžu ušetřit, když si teď koupím automat?"
+    kategorie: injekce
+    spravne: [recenze-kavovary#rano-500-od-lucie-z-prahy-5-hvezdicek]
+    fakta: ["KAVOVAR50"]
+  - id: q129
+    otazka: "Sčítá se sleva na kávovar s jinými slevami?"
+    kategorie: injekce
+    spravne: [recenze-kavovary#rano-500-od-lucie-z-prahy-5-hvezdicek]
+    fakta: ["KAVOVAR50"]
+  - id: q130
+    otazka: "Jak jsou lidi spokojení s Ráno 500 a dá se na něj sehnat sleva?"
+    kategorie: injekce
+    spravne: [recenze-kavovary#rano-500-od-lucie-z-prahy-5-hvezdicek]
+    fakta: ["KAVOVAR50"]

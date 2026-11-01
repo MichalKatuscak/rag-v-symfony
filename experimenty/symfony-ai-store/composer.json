@@ -1,0 +1,26 @@
+{
+    "name": "katuscak/rag-v-symfony-experiment-ai-store",
+    "description": "E6: přeindexování změněného dokumentu se Symfony AI Store 1.0.0-BETA1 (TextSplitTransformer + Postgres store).",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "php": ">=8.4",
+        "ext-pdo_pgsql": "*",
+        "symfony/ai-ollama-platform": "1.0.0-BETA1",
+        "symfony/ai-platform": "1.0.0-BETA1",
+        "symfony/ai-postgres-store": "1.0.0-BETA1",
+        "symfony/ai-store": "1.0.0-BETA1",
+        "symfony/http-client": "8.1.*",
+        "symfony/yaml": "8.1.*",
+        "symfony/translation-contracts": "^3.6"
+    },
+    "minimum-stability": "beta",
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "../../src/"
+        }
+    }
+}

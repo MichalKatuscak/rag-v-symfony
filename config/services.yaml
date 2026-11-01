@@ -1,0 +1,27 @@
+parameters:
+    rag.podklady_dir: '%kernel.project_dir%/podklady'
+    rag.vysledky_dir: '%kernel.project_dir%/vysledky'
+    rag.otazky_file: '%kernel.project_dir%/otazky/sada.yaml'
+    # Modely: stejné jako ve videu 12 (chatbot-s-podklady), kvůli srovnání.
+    rag.embed_model: 'bge-m3'
+    rag.chat_models: { maly: 'gemma4:e2b', velky: 'gemma4:12b' }
+    rag.num_ctx: 8192
+
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+        bind:
+            string $ollamaUrl: '%env(OLLAMA_URL)%'
+            string $rerankerUrl: '%env(RERANKER_URL)%'
+            string $embedModel: '%rag.embed_model%'
+            array $chatModels: '%rag.chat_models%'
+            int $numCtx: '%rag.num_ctx%'
+            string $podkladyDir: '%rag.podklady_dir%'
+            string $vysledkyDir: '%rag.vysledky_dir%'
+            string $otazkyFile: '%rag.otazky_file%'
+            string $projectDir: '%kernel.project_dir%'
+
+    App\:
+        resource: '../src/'
+        exclude: '../src/Kernel.php'

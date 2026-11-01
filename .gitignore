@@ -1,0 +1,4 @@
+/vendor/
+/var/
+/.env.local
+/experimenty/symfony-ai-store/vendor/

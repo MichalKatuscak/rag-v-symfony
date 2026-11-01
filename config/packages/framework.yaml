@@ -1,0 +1,5 @@
+framework:
+    secret: '%env(APP_SECRET)%'
+    http_client:
+        default_options:
+            timeout: 900

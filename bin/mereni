@@ -1,0 +1,48 @@
+#!/usr/bin/env bash
+# Všechna měření za sebou. Běží v kontejneru app: docker compose run --rm app bin/mereni
+# Výsledky: vysledky/*.json. Parametry: MODELY="maly velky" (výchozí), BEZ_RERANKERU=1.
+# Fáze: bin/mereni [vse|hledani|ostatni]. Reranker je potřeba jen pro „hledani“; spouštěcí skripty ho
+# po ní zastaví, aby na 8 GB GPU nezabíral místo jazykovým modelům.
+set -euo pipefail
+cd "$(dirname "$0")/.."
+
+FAZE="${1:-vse}"
+MODELY="${MODELY:-maly velky}"
+RERANK_OPT=""
+[ "${BEZ_RERANKERU:-0}" = "1" ] && RERANK_OPT="--bez-rerankeru"
+
+krok() { echo; echo "=== $* ==="; }
+
+if [ "$FAZE" != "ostatni" ]; then
+krok "Závislosti"
+composer install --no-interaction --quiet
+composer install --no-interaction --quiet -d experimenty/symfony-ai-store
+
+krok "Schéma a indexace přes Messenger"
+rm -rf var/cache
+php bin/console app:schema --drop
+php bin/console messenger:setup-transports
+php bin/console app:index
+WORKER_STOP_WHEN_IDLE=1 php bin/console messenger:consume async --time-limit=3600 -vv
+php bin/console app:meta
+
+krok "E1–E3 hledání"
+php bin/console app:mereni:hledani $RERANK_OPT
+fi
+[ "$FAZE" = "hledani" ] && exit 0
+
+for m in $MODELY; do
+  krok "E4 odpovědi ($m)";     php bin/console app:mereni:odpovedi --model "$m"
+  krok "E5 ořezání ($m)";      php bin/console app:mereni:orezani --model "$m"
+  krok "E7 oprávnění ($m)";    php bin/console app:mereni:opravneni --model "$m"
+done
+
+krok "E6 přeindexování"
+php bin/console app:mereni:preindexovani --model "$(echo $MODELY | cut -d' ' -f1)"
+php experimenty/symfony-ai-store/run.php
+
+krok "E8 výkon"
+php bin/console app:mereni:vykon --modely "$(echo $MODELY | tr ' ' ',')"
+
+krok "Hotovo: vysledky/"
+ls -la vysledky

@@ -1,0 +1,35 @@
+# Ollama běží nativně na hostu (kvůli GPU), aplikace na ni volá přes host.docker.internal.
+services:
+  db:
+    build: docker/db
+    environment:
+      POSTGRES_DB: rag
+      POSTGRES_USER: rag
+      POSTGRES_PASSWORD: rag
+    ports: ["55432:5432"]
+    shm_size: 1g
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "rag", "-d", "rag"]
+      interval: 2s
+      retries: 30
+
+  app:
+    build: docker/php
+    volumes: [".:/app"]
+    environment:
+      DATABASE_URL: "postgresql://rag:rag@db:5432/rag?serverVersion=18&charset=utf8"
+      # Jiný název proměnné než v .env: compose čte .env v kořeni i pro dosazování.
+      OLLAMA_URL: "${RAG_OLLAMA_URL:-http://host.docker.internal:11434}"
+      RERANKER_URL: "http://reranker:8080"
+    extra_hosts: ["host.docker.internal:host-gateway"]
+    depends_on:
+      db: { condition: service_healthy }
+
+  # Reranker bge-reranker-v2-m3 (Ollama endpoint pro reranking nemá). Běží na CPU, model se stáhne při prvním startu.
+  reranker:
+    image: ghcr.io/ggml-org/llama.cpp:server
+    command: ["--rerank", "-hf", "gpustack/bge-reranker-v2-m3-GGUF:Q8_0", "--host", "0.0.0.0", "--port", "8080", "-c", "8192", "-ub", "8192", "-b", "8192"]
+    volumes: ["reranker-cache:/root/.cache"]
+
+volumes:
+  reranker-cache:
