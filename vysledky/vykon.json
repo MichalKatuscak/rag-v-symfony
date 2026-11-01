@@ -1,0 +1,240 @@
+{
+    "zmereno": "2026-11-01T16:43:43+00:00",
+    "popis": "E8: přesné hledání vs. HNSW, HNSW s filtrem, výměna modelů v paměti.",
+    "pgvector": {
+        "10000": {
+            "generovani_s": 1.4,
+            "velikost_tabulky": "132 MB",
+            "presne_bez_indexu_ms": {
+                "n": 50,
+                "p50": 16.96,
+                "p95": 18.24
+            },
+            "hnsw_stavba_s": 1.7,
+            "hnsw_ms": {
+                "n": 50,
+                "p50": 0.31,
+                "p95": 0.42
+            },
+            "hnsw_recall_at_10": 0.872,
+            "filtr_10_procent": {
+                "presne_ms": {
+                    "n": 50,
+                    "p50": 1.68,
+                    "p95": 2.13
+                },
+                "hnsw_bez_iterative_scan": {
+                    "ms": {
+                        "n": 50,
+                        "p50": 0.32,
+                        "p95": 0.4
+                    },
+                    "prumer_vracenych_radku": 3.74,
+                    "recall_at_10": 0.334
+                },
+                "hnsw_iterative_scan_relaxed": {
+                    "ms": {
+                        "n": 50,
+                        "p50": 0.58,
+                        "p95": 0.89
+                    },
+                    "prumer_vracenych_radku": 10.0,
+                    "recall_at_10": 0.886
+                }
+            }
+        },
+        "100000": {
+            "generovani_s": 10.6,
+            "velikost_tabulky": "1317 MB",
+            "presne_bez_indexu_ms": {
+                "n": 50,
+                "p50": 258.61,
+                "p95": 271.77
+            },
+            "hnsw_stavba_s": 136.1,
+            "hnsw_ms": {
+                "n": 50,
+                "p50": 1.77,
+                "p95": 2.23
+            },
+            "hnsw_recall_at_10": 0.676,
+            "filtr_10_procent": {
+                "presne_ms": {
+                    "n": 50,
+                    "p50": 23.06,
+                    "p95": 24.61
+                },
+                "hnsw_bez_iterative_scan": {
+                    "ms": {
+                        "n": 50,
+                        "p50": 1.08,
+                        "p95": 1.61
+                    },
+                    "prumer_vracenych_radku": 3.32,
+                    "recall_at_10": 0.242
+                },
+                "hnsw_iterative_scan_relaxed": {
+                    "ms": {
+                        "n": 50,
+                        "p50": 1.3,
+                        "p95": 2.07
+                    },
+                    "prumer_vracenych_radku": 10.0,
+                    "recall_at_10": 0.72
+                }
+            }
+        }
+    },
+    "pgvector_verze": "0.8.7",
+    "vymena_modelu": {
+        "gemma4:e2b": [
+            {
+                "krok": "embed",
+                "load_ms": 3.8,
+                "wall_ms": 114.9,
+                "v_pameti": [
+                    {
+                        "model": "bge-m3:latest",
+                        "size_vram_mb": 633,
+                        "size_mb": 633
+                    }
+                ]
+            },
+            {
+                "krok": "chat",
+                "load_ms": 3898.9,
+                "wall_ms": 4114.5,
+                "v_pameti": [
+                    {
+                        "model": "gemma4:e2b",
+                        "size_vram_mb": 252,
+                        "size_mb": 252
+                    },
+                    {
+                        "model": "bge-m3:latest",
+                        "size_vram_mb": 633,
+                        "size_mb": 633
+                    }
+                ]
+            },
+            {
+                "krok": "embed",
+                "load_ms": 4.7,
+                "wall_ms": 14.3,
+                "v_pameti": [
+                    {
+                        "model": "gemma4:e2b",
+                        "size_vram_mb": 252,
+                        "size_mb": 252
+                    },
+                    {
+                        "model": "bge-m3:latest",
+                        "size_vram_mb": 633,
+                        "size_mb": 633
+                    }
+                ]
+            },
+            {
+                "krok": "chat",
+                "load_ms": 6.8,
+                "wall_ms": 121.3,
+                "v_pameti": [
+                    {
+                        "model": "gemma4:e2b",
+                        "size_vram_mb": 252,
+                        "size_mb": 252
+                    },
+                    {
+                        "model": "bge-m3:latest",
+                        "size_vram_mb": 633,
+                        "size_mb": 633
+                    }
+                ]
+            },
+            {
+                "krok": "embed",
+                "load_ms": 4.2,
+                "wall_ms": 12.2,
+                "v_pameti": [
+                    {
+                        "model": "gemma4:e2b",
+                        "size_vram_mb": 252,
+                        "size_mb": 252
+                    },
+                    {
+                        "model": "bge-m3:latest",
+                        "size_vram_mb": 633,
+                        "size_mb": 633
+                    }
+                ]
+            }
+        ],
+        "gemma4:12b": [
+            {
+                "krok": "embed",
+                "load_ms": 7.3,
+                "wall_ms": 15.2,
+                "v_pameti": [
+                    {
+                        "model": "gemma4:e2b",
+                        "size_vram_mb": 252,
+                        "size_mb": 252
+                    },
+                    {
+                        "model": "bge-m3:latest",
+                        "size_vram_mb": 633,
+                        "size_mb": 633
+                    }
+                ]
+            },
+            {
+                "krok": "chat",
+                "load_ms": 8528.4,
+                "wall_ms": 9060.1,
+                "v_pameti": [
+                    {
+                        "model": "gemma4:12b",
+                        "size_vram_mb": 896,
+                        "size_mb": 896
+                    }
+                ]
+            },
+            {
+                "krok": "embed",
+                "load_ms": 2747.7,
+                "wall_ms": 2785.6,
+                "v_pameti": [
+                    {
+                        "model": "bge-m3:latest",
+                        "size_vram_mb": 633,
+                        "size_mb": 633
+                    }
+                ]
+            },
+            {
+                "krok": "chat",
+                "load_ms": 8555.6,
+                "wall_ms": 9120.5,
+                "v_pameti": [
+                    {
+                        "model": "gemma4:12b",
+                        "size_vram_mb": 896,
+                        "size_mb": 896
+                    }
+                ]
+            },
+            {
+                "krok": "embed",
+                "load_ms": 2686.6,
+                "wall_ms": 2718.4,
+                "v_pameti": [
+                    {
+                        "model": "bge-m3:latest",
+                        "size_vram_mb": 633,
+                        "size_mb": 633
+                    }
+                ]
+            }
+        ]
+    }
+}

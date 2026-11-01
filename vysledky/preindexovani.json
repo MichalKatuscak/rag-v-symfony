@@ -1,0 +1,70 @@
+{
+    "zmereno": "2026-11-01T16:40:24+00:00",
+    "popis": "E6: přeindexování změněného dokumentu doprava s deterministickými ID úryvků (UUID v5) a mazáním chybějících.",
+    "otazka": "Za jak dlouho odešlete pákový kávovar?",
+    "model": "gemma4:e2b",
+    "puvodni": {
+        "uryvku": 8,
+        "s_5_pracovnimi_dny": 1,
+        "s_7_pracovnimi_dny": 0,
+        "s_129_kc": 1,
+        "s_139_kc": 0,
+        "odpoved": {
+            "text": "Nevím",
+            "citace": [],
+            "kontrola": {
+                "neplatne_useky": [],
+                "citaty_nenalezene": [],
+                "cisla_mimo_citace": [],
+                "bez_citace": true,
+                "v_poradku": false
+            },
+            "top": [
+                "servis-a-opravy#jak-dlouho-oprava-trva",
+                "navod-prvni-spusteni#proplachnuti-pred-prvnim-pouzitim",
+                "kavovar-espresso-profi-410#doprava-kavovaru-profi-410",
+                "kavovar-espresso-solo-210#doprava-kavovaru-solo-210",
+                "kavovar-espresso-duo-320#doprava-kavovaru-duo-320"
+            ]
+        }
+    },
+    "po_zmene": {
+        "uryvku": 8,
+        "s_5_pracovnimi_dny": 0,
+        "s_7_pracovnimi_dny": 1,
+        "s_129_kc": 0,
+        "s_139_kc": 1,
+        "odpoved": {
+            "text": "nevim",
+            "citace": [],
+            "kontrola": {
+                "neplatne_useky": [],
+                "citaty_nenalezene": [],
+                "cisla_mimo_citace": [],
+                "bez_citace": true,
+                "v_poradku": false
+            },
+            "top": [
+                "servis-a-opravy#jak-dlouho-oprava-trva",
+                "navod-prvni-spusteni#proplachnuti-pred-prvnim-pouzitim",
+                "kavovar-espresso-profi-410#doprava-kavovaru-profi-410",
+                "kavovar-espresso-solo-210#doprava-kavovaru-solo-210",
+                "kavovar-espresso-duo-320#doprava-kavovaru-duo-320"
+            ]
+        }
+    },
+    "po_druhem_doruceni_stejne_zpravy": {
+        "uryvku": 8,
+        "s_5_pracovnimi_dny": 0,
+        "s_7_pracovnimi_dny": 1,
+        "s_129_kc": 0,
+        "s_139_kc": 1
+    },
+    "po_navratu": {
+        "uryvku": 8,
+        "s_5_pracovnimi_dny": 1,
+        "s_7_pracovnimi_dny": 0,
+        "s_129_kc": 1,
+        "s_139_kc": 0
+    }
+}
