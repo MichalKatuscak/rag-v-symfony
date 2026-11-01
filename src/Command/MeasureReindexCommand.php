@@ -60,7 +60,7 @@ final class MeasureReindexCommand
         $this->indexer->index(SourceDocument::fromFile($original));
         $out['po_navratu'] = $this->snapshot();
 
-        $path = $this->results->write('preindexovani', ['popis' => 'E6: přeindexování změněného dokumentu doprava s deterministickými ID úryvků (UUID v5) a mazáním chybějících.', 'otazka' => self::QUESTION, 'model' => $modelName] + $out);
+        $path = $this->results->write('preindexovani', ['popis' => 'E6: přeindexování změněného dokumentu doprava s deterministickými ID úryvků (UUID v5) a mazáním chybějících.', 'otazka' => self::QUESTION, 'varianta_hledani' => 'vektor', 'model' => $modelName] + $out);
         $io->writeln(json_encode($out, \JSON_PRETTY_PRINT | \JSON_UNESCAPED_UNICODE));
         $io->success('Uloženo do '.$path);
 
@@ -83,7 +83,9 @@ final class MeasureReindexCommand
 
     private function ask(string $model): array
     {
-        $hits = $this->search->search(self::QUESTION, 'hybrid', Access::zakaznik());
+        // Nejlepší varianta bez rerankeru podle E1 (reranker v téhle fázi neběží). S hybridem úryvek doprava#kavovary
+        // vypadl z top 5 (RTX 4060, 1. 11.) a model správně řekl „nevím“ před změnou i po ní.
+        $hits = $this->search->search(self::QUESTION, 'vektor', Access::zakaznik());
         $a = $this->answers->answer($model, self::QUESTION, $hits);
 
         return ['text' => $a['odpoved'], 'citace' => $a['citace'], 'kontrola' => $a['kontrola'], 'top' => array_map(static fn ($h) => $h->sectionKey, $hits)];

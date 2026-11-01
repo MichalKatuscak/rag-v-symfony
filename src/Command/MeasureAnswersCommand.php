@@ -64,6 +64,30 @@ final class MeasureAnswersCommand
         }
         $io->progressFinish();
 
+        $summary = self::summarize($rows);
+
+        $path = $this->results->write('odpovedi-'.$model.('hybrid' === $varianta ? '' : '-'.$varianta), [
+            'popis' => 'E4: odpovědi modelu nad nalezenými úryvky, kontrola citací kódem, „nevím“ u otázek mimo podklady.',
+            'model' => $modelName, 'varianta_hledani' => $varianta, 'uryvku' => $uryvku,
+            'system_prompt' => AnswerService::SYSTEM,
+            'souhrn' => $summary,
+            'otazky' => $rows,
+        ]);
+        $io->writeln(json_encode($summary, \JSON_PRETTY_PRINT | \JSON_UNESCAPED_UNICODE));
+        $io->success('Uloženo do '.$path);
+
+        return 0;
+    }
+
+    /**
+     * Souhrn E4 z řádků s verdiktem a kontrolou citací (používá i app:prepocet).
+     *
+     * @param list<array<string, mixed>> $rows
+     *
+     * @return array<string, mixed>
+     */
+    public static function summarize(array $rows): array
+    {
         $answerable = array_values(array_filter($rows, static fn (array $r): bool => 'neodpovezitelna' !== $r['kategorie']));
         $unanswerable = array_values(array_filter($rows, static fn (array $r): bool => 'neodpovezitelna' === $r['kategorie']));
         $count = static fn (array $rs, callable $f): int => \count(array_filter($rs, $f));
@@ -104,16 +128,6 @@ final class MeasureAnswersCommand
             ],
         ];
 
-        $path = $this->results->write('odpovedi-'.$model, [
-            'popis' => 'E4: odpovědi modelu nad nalezenými úryvky, kontrola citací kódem, „nevím“ u otázek mimo podklady.',
-            'model' => $modelName, 'varianta_hledani' => $varianta, 'uryvku' => $uryvku,
-            'system_prompt' => AnswerService::SYSTEM,
-            'souhrn' => $summary,
-            'otazky' => $rows,
-        ]);
-        $io->writeln(json_encode($summary, \JSON_PRETTY_PRINT | \JSON_UNESCAPED_UNICODE));
-        $io->success('Uloženo do '.$path);
-
-        return 0;
+        return $summary;
     }
 }

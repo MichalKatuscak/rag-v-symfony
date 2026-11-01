@@ -21,7 +21,8 @@ final readonly class Question
 
     public function answerable(): bool
     {
-        return [] !== $this->spravne && !\in_array($this->kategorie, ['neodpovezitelna', 'interni'], true);
+        // Interní otázky a podvržené pokyny (injekce) mají správný úryvek mimo podklady pro zákazníka; měří je E7.
+        return [] !== $this->spravne && !\in_array($this->kategorie, ['neodpovezitelna', 'interni', 'injekce'], true);
     }
 
     /** Stejná otázka bez háčků a čárek („kdy prijde kavovar“). */

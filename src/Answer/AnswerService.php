@@ -74,8 +74,7 @@ final class AnswerService
         $flag = (bool) ($answer['nevim'] ?? false);
         // Malé modely občas nastaví „nevim“ a stejně odpoví (nebo naopak). Zákazník vidí text, proto rozhoduje text:
         // „nevím“ = odmítavá věta v odpovědi, nebo příznak bez jediné citace.
-        $refusal = str_contains(\App\Eval\Text::forMatch($answer['odpoved']), 'v podkladech nemam');
-        $answer['nevim'] = $refusal || ($flag && [] === $answer['citace']);
+        $answer['nevim'] = self::isRefusal($answer['odpoved']) || ($flag && [] === $answer['citace']);
 
         return [
             'model' => $model,
@@ -88,5 +87,16 @@ final class AnswerService
             'kontext' => array_map(static fn (string $l, Hit $h): array => ['usek' => $l, 'section' => $h->sectionKey, 'zdroj' => $h->zdroj, 'pristup' => $h->pristup], array_keys($labels), $labels),
             'metriky' => array_diff_key($r, ['content' => 1]),
         ];
+    }
+
+    /**
+     * Odmítavá odpověď: věta ze system promptu, nebo jen „nevím“ (malé modely často napíšou do textu
+     * jen „nevim“ a příznak nenastaví).
+     */
+    public static function isRefusal(string $text): bool
+    {
+        $t = \App\Eval\Text::forMatch($text);
+
+        return str_contains($t, 'v podkladech nemam') || 1 === preg_match('/^\W*nevim\W*$/u', $t);
     }
 }

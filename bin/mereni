@@ -33,6 +33,7 @@ fi
 
 for m in $MODELY; do
   krok "E4 odpovědi ($m)";     php bin/console app:mereni:odpovedi --model "$m"
+  krok "E4 odpovědi ($m, hledání jen vektorem)"; php bin/console app:mereni:odpovedi --model "$m" --varianta vektor
   krok "E5 ořezání ($m)";      php bin/console app:mereni:orezani --model "$m"
   krok "E7 oprávnění ($m)";    php bin/console app:mereni:opravneni --model "$m"
 done

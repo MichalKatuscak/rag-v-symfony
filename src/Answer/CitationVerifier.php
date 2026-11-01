@@ -44,7 +44,9 @@ final class CitationVerifier
         $numbersOutside = [];
         if (!($answer['nevim'] ?? false)) {
             $cited = self::numbers(implode("\n", $citedTexts));
-            foreach (self::numbers($answer['odpoved']) as $n) {
+            // Značky úseků („[U3]“, „U3:“) nejsou čísla z odpovědi.
+            $text = preg_replace('/\[?\bU\d+\b\]?/u', ' ', $answer['odpoved']);
+            foreach (self::numbers($text) as $n) {
                 if (!\in_array($n, $cited, true)) {
                     $numbersOutside[] = $n;
                 }

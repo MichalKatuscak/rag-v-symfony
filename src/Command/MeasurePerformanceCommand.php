@@ -80,6 +80,12 @@ final class MeasurePerformanceCommand
         $this->db->executeStatement("CREATE INDEX {$table}_hnsw ON $table USING hnsw (embedding vector_cosine_ops)");
         $build = (hrtime(true) - $t) / 1e9;
         $hnsw = $this->run($table, $queries, false);
+        // Syntetická data = kopie 284 skutečných úryvků se šumem, takže mezi sousedy je hodně skoro shodných vzdáleností
+        // a recall HNSW vychází hůř než na skutečných datech. Proto i vyšší ef_search (výchozí je 40).
+        $efSweep = [];
+        foreach ([40, 100, 200] as $ef) {
+            $efSweep[$ef] = 40 === $ef ? $hnsw : $this->run($table, $queries, false, 'auto', $ef);
+        }
 
         $exactFiltered = $this->run($table, $queries, true, 'exact');
         $hnswFilteredOff = $this->run($table, $queries, true, 'off');
@@ -94,6 +100,7 @@ final class MeasurePerformanceCommand
             'hnsw_stavba_s' => round($build, 1),
             'hnsw_ms' => $hnsw['ms'],
             'hnsw_recall_at_10' => $recall($exact, $hnsw),
+            'hnsw_podle_ef_search' => array_map(static fn (array $r): array => ['ms' => $r['ms'], 'recall_at_10' => $recall($exact, $r)], $efSweep),
             'filtr_10_procent' => [
                 'presne_ms' => $exactFiltered['ms'],
                 'hnsw_bez_iterative_scan' => ['ms' => $hnswFilteredOff['ms'], 'prumer_vracenych_radku' => $hnswFilteredOff['rows_avg'], 'recall_at_10' => $recall($exactFiltered, $hnswFilteredOff)],
@@ -107,13 +114,13 @@ final class MeasurePerformanceCommand
     }
 
     /** @param list<string> $queries */
-    private function run(string $table, array $queries, bool $filtered, string $mode = 'auto'): array
+    private function run(string $table, array $queries, bool $filtered, string $mode = 'auto', int $efSearch = 40): array
     {
         $ids = [];
         $ms = [];
         $rows = [];
-        $this->db->transactional(function (Connection $db) use ($table, $queries, $filtered, $mode, &$ids, &$ms, &$rows): void {
-            $db->executeStatement('SET LOCAL hnsw.ef_search = 40');
+        $this->db->transactional(function (Connection $db) use ($table, $queries, $filtered, $mode, $efSearch, &$ids, &$ms, &$rows): void {
+            $db->executeStatement('SET LOCAL hnsw.ef_search = '.$efSearch);
             if ('exact' === $mode) {
                 $db->executeStatement('SET LOCAL enable_indexscan = off');
             } elseif ('auto' !== $mode) {

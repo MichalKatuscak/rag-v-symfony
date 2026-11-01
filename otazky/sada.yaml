@@ -173,7 +173,7 @@ otazky:
     otazka: "Do kdy musím nahlásit, že obsah balíku přišel poškozený?"
     kategorie: bezna
     spravne: [doprava#poskozeny-balik, obchodni-podminky#kontrola-zasilky-pri-prevzeti, reklamacni-rad#reklamace-zbozi-poskozeneho-pri-preprave]
-    fakta: ["3 pracovních dnů"]
+    fakta: ["3 pracovních dnů|tří pracovních dnů"]   # doplněno po měření: model napsal číslo slovem
   - id: q034
     otazka: "Kolik stojí mlýnek Kámen 64?"
     kategorie: bezna

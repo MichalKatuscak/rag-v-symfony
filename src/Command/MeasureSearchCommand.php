@@ -82,44 +82,8 @@ final class MeasureSearchCommand
         }
         $io->progressFinish();
 
-        $summary = [];
-        foreach ($variants as $variant) {
-            $pick = static fn (callable $filter): array => array_map(static fn (array $r): array => $r['varianty'][$variant], array_values(array_filter($rows, $filter)));
-            $summary[$variant] = [
-                'vse' => Metrics::aggregate($pick(static fn (): bool => true)),
-                's_diakritikou' => Metrics::aggregate($pick(static fn (array $r): bool => $r['diakritika'])),
-                'bez_diakritiky' => Metrics::aggregate($pick(static fn (array $r): bool => !$r['diakritika'])),
-                'podle_kategorie' => [],
-                'latence_ms' => self::percentiles($latency[$variant]),
-            ];
-            foreach (array_unique(array_column($rows, 'kategorie')) as $cat) {
-                $summary[$variant]['podle_kategorie'][$cat] = Metrics::aggregate($pick(static fn (array $r): bool => $r['kategorie'] === $cat && $r['diakritika']));
-            }
-        }
-
-        // Párová srovnání (stejné otázky): rozdíl hit@5 a MRR s intervalem spolehlivosti.
-        $pairs = [];
-        foreach (self::PAIRS as [$a, $b]) {
-            if (!\in_array($a, $variants, true) || !\in_array($b, $variants, true)) {
-                continue;
-            }
-            foreach (['hit5', 'rr'] as $m) {
-                $pairs["$a → $b"][$m] = Metrics::pairedDifference(
-                    array_map(static fn (array $r) => $r['varianty'][$a][$m], $rows),
-                    array_map(static fn (array $r) => $r['varianty'][$b][$m], $rows),
-                );
-            }
-        }
-        // Diakritika: stejná otázka s háčky vs. bez, pro každou variantu.
-        $accentPairs = [];
-        $with = array_values(array_filter($rows, static fn (array $r): bool => $r['diakritika']));
-        $without = array_values(array_filter($rows, static fn (array $r): bool => !$r['diakritika']));
-        foreach ($variants as $variant) {
-            $accentPairs[$variant] = Metrics::pairedDifference(
-                array_map(static fn (array $r) => $r['varianty'][$variant]['hit5'], $with),
-                array_map(static fn (array $r) => $r['varianty'][$variant]['hit5'], $without),
-            );
-        }
+        $agg = self::summarize($rows, $variants, array_map(self::percentiles(...), $latency));
+        $summary = $agg['varianty'];
 
         $scores = $this->scoreDistribution($io, $bezRerankeru);
 
@@ -129,8 +93,8 @@ final class MeasureSearchCommand
             'otazek' => \count($answerable),
             'embedding_dotazu_ms' => self::percentiles($embedMs),
             'varianty' => $summary,
-            'parova_srovnani_hit5_a_mrr' => $pairs,
-            'diakritika_rozdil_hit5' => $accentPairs,
+            'parova_srovnani_hit5_a_mrr' => $agg['parova_srovnani_hit5_a_mrr'],
+            'diakritika_rozdil_hit5' => $agg['diakritika_rozdil_hit5'],
             'skore' => $scores,
             'otazky' => $rows,
         ]);
@@ -169,21 +133,7 @@ final class MeasureSearchCommand
             $groups[$group][] = $row;
         }
 
-        $out = ['skupiny' => $groups];
-        foreach (['kosinus_top1', 'rerank_top1'] as $metric) {
-            if ($noReranker && 'rerank_top1' === $metric) {
-                continue;
-            }
-            $yes = array_values(array_filter(array_column($groups['odpovedi_v_podkladech'], $metric), 'is_float'));
-            $no = array_values(array_filter(array_column($groups['neodpovezitelne'], $metric), 'is_float'));
-            $out[$metric] = [
-                'odpovedi_v_podkladech' => self::stats($yes),
-                'neodpovezitelne' => self::stats($no),
-                'nejlepsi_prah' => self::bestThreshold($yes, $no),
-            ];
-        }
-
-        return $out;
+        return self::scoreSummary($groups);
     }
 
     /**
@@ -233,5 +183,84 @@ final class MeasureSearchCommand
         }
 
         return ['n' => $n, 'p50' => round($ms[(int) floor(0.5 * ($n - 1))], 2), 'p95' => round($ms[(int) floor(0.95 * ($n - 1))], 2)];
+    }
+
+    /**
+     * Metriky variant, párová srovnání a vliv diakritiky z řádků otázek (používá i app:prepocet).
+     *
+     * @param list<array<string, mixed>>  $rows
+     * @param list<string>                $variants
+     * @param array<string, array<mixed>> $latency  percentily latence podle varianty
+     *
+     * @return array{varianty: array<string, mixed>, parova_srovnani_hit5_a_mrr: array<string, mixed>, diakritika_rozdil_hit5: array<string, mixed>}
+     */
+    public static function summarize(array $rows, array $variants, array $latency): array
+    {
+        $summary = [];
+        foreach ($variants as $variant) {
+            $pick = static fn (callable $filter): array => array_map(static fn (array $r): array => $r['varianty'][$variant], array_values(array_filter($rows, $filter)));
+            $summary[$variant] = [
+                'vse' => Metrics::aggregate($pick(static fn (): bool => true)),
+                's_diakritikou' => Metrics::aggregate($pick(static fn (array $r): bool => $r['diakritika'])),
+                'bez_diakritiky' => Metrics::aggregate($pick(static fn (array $r): bool => !$r['diakritika'])),
+                'podle_kategorie' => [],
+                'latence_ms' => $latency[$variant],
+            ];
+            foreach (array_unique(array_column($rows, 'kategorie')) as $cat) {
+                $summary[$variant]['podle_kategorie'][$cat] = Metrics::aggregate($pick(static fn (array $r): bool => $r['kategorie'] === $cat && $r['diakritika']));
+            }
+        }
+
+        // Párová srovnání (stejné otázky): rozdíl hit@5 a MRR s intervalem spolehlivosti.
+        $pairs = [];
+        foreach (self::PAIRS as [$a, $b]) {
+            if (!\in_array($a, $variants, true) || !\in_array($b, $variants, true)) {
+                continue;
+            }
+            foreach (['hit5', 'rr'] as $m) {
+                $pairs["$a → $b"][$m] = Metrics::pairedDifference(
+                    array_map(static fn (array $r) => $r['varianty'][$a][$m], $rows),
+                    array_map(static fn (array $r) => $r['varianty'][$b][$m], $rows),
+                );
+            }
+        }
+        // Diakritika: stejná otázka s háčky vs. bez, pro každou variantu.
+        $accentPairs = [];
+        $with = array_values(array_filter($rows, static fn (array $r): bool => $r['diakritika']));
+        $without = array_values(array_filter($rows, static fn (array $r): bool => !$r['diakritika']));
+        foreach ($variants as $variant) {
+            $accentPairs[$variant] = Metrics::pairedDifference(
+                array_map(static fn (array $r) => $r['varianty'][$variant]['hit5'], $with),
+                array_map(static fn (array $r) => $r['varianty'][$variant]['hit5'], $without),
+            );
+        }
+
+        return ['varianty' => $summary, 'parova_srovnani_hit5_a_mrr' => $pairs, 'diakritika_rozdil_hit5' => $accentPairs];
+    }
+
+    /**
+     * Rozložení skóre a nejlepší práh pro skupiny otázek (používá i app:prepocet).
+     *
+     * @param array{odpovedi_v_podkladech: list<array<string, mixed>>, neodpovezitelne: list<array<string, mixed>>} $groups
+     *
+     * @return array<string, mixed>
+     */
+    public static function scoreSummary(array $groups): array
+    {
+        $out = ['skupiny' => $groups];
+        foreach (['kosinus_top1', 'rerank_top1'] as $metric) {
+            $yes = array_values(array_filter(array_column($groups['odpovedi_v_podkladech'], $metric), 'is_float'));
+            $no = array_values(array_filter(array_column($groups['neodpovezitelne'], $metric), 'is_float'));
+            if ([] === $yes) {
+                continue;
+            }
+            $out[$metric] = [
+                'odpovedi_v_podkladech' => self::stats($yes),
+                'neodpovezitelne' => self::stats($no),
+                'nejlepsi_prah' => self::bestThreshold($yes, $no),
+            ];
+        }
+
+        return $out;
     }
 }
