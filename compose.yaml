@@ -6,7 +6,8 @@ services:
       POSTGRES_DB: rag
       POSTGRES_USER: rag
       POSTGRES_PASSWORD: rag
-    ports: ["55432:5432"]
+    # Windows si porty 49152+ občas rezervuje (netsh int ipv4 show excludedportrange), pak RAG_DB_PORT=15432.
+    ports: ["${RAG_DB_PORT:-55432}:5432"]
     shm_size: 1g
     healthcheck:
       test: ["CMD", "pg_isready", "-U", "rag", "-d", "rag"]
