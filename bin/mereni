@@ -14,7 +14,7 @@ RERANK_OPT=""
 
 krok() { echo; echo "=== $* ==="; }
 
-if [ "$FAZE" != "ostatni" ]; then
+if [ "$FAZE" != "ostatni" ] && [ "$FAZE" != "odpovedi-rerank" ]; then
 krok "Závislosti"
 composer install --no-interaction --quiet
 composer install --no-interaction --quiet -d experimenty/symfony-ai-store
