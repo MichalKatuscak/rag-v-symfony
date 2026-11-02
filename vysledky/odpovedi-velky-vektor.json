@@ -8,11 +8,11 @@
     "souhrn": {
         "odpovedi_v_podkladech": {
             "n": 91,
-            "spravne": 78,
-            "spatne": 6,
+            "spravne": 79,
+            "spatne": 5,
             "falesne_nevim": 7,
             "spatne_a_uryvek_chybel": 11,
-            "spatne_i_kdyz_uryvek_byl": 2
+            "spatne_i_kdyz_uryvek_byl": 1
         },
         "neodpovezitelne": {
             "n": 26,
@@ -20,9 +20,9 @@
             "vymyslel": 3
         },
         "kontrola_citaci": {
-            "spatnych_odpovedi": 9,
+            "spatnych_odpovedi": 8,
             "spatnych_chycenych_kontrolou": 1,
-            "spravnych_odpovedi": 78,
+            "spravnych_odpovedi": 79,
             "spravnych_oznacenych_kontrolou": 6,
             "neplatny_usek": 0,
             "citat_neni_v_uryvku": 4,
@@ -959,11 +959,9 @@
             "id": "q014",
             "kategorie": "bezna",
             "otazka": "Dá se vám zavolat? Jaké máte číslo?",
-            "verdikt": "spatne",
+            "verdikt": "spravne",
             "spravny_uryvek_v_kontextu": true,
-            "chybejici_fakta": [
-                "500 600 700"
-            ],
+            "chybejici_fakta": [],
             "model": "gemma4:12b",
             "json_platny": true,
             "nevim": false,
@@ -7987,5 +7985,44 @@
                 "wall_ms": 14193.6
             }
         }
-    ]
+    ],
+    "prepocet": {
+        "kdy": "2026-11-02T18:01:27+00:00",
+        "duvod": "Oprava vyhodnocení po finálním běhu: porovnání faktů slučovalo mezery v číslech jen po trojicích, takže „+420 500 600 700“ neobsahovalo „500 600 700“ (q014). Odpovědi modelů jsou beze změny.",
+        "vyrazene_otazky": [],
+        "zmenena_kontrola_citaci": 0,
+        "zmeneny_verdikt": 1,
+        "puvodni_souhrn": {
+            "odpovedi_v_podkladech": {
+                "n": 91,
+                "spravne": 78,
+                "spatne": 6,
+                "falesne_nevim": 7,
+                "spatne_a_uryvek_chybel": 11,
+                "spatne_i_kdyz_uryvek_byl": 2
+            },
+            "neodpovezitelne": {
+                "n": 26,
+                "rekl_nevim": 23,
+                "vymyslel": 3
+            },
+            "kontrola_citaci": {
+                "spatnych_odpovedi": 9,
+                "spatnych_chycenych_kontrolou": 1,
+                "spravnych_odpovedi": 78,
+                "spravnych_oznacenych_kontrolou": 6,
+                "neplatny_usek": 0,
+                "citat_neni_v_uryvku": 4,
+                "cislo_mimo_citace": 3,
+                "bez_citace": 2,
+                "neplatny_json": 0,
+                "priznak_nevim_nesedi_s_textem": 1
+            },
+            "cas_ms": {
+                "p50": 14518.4,
+                "p95": 23286.1,
+                "prompt_tokens_p50": 1267.0
+            }
+        }
+    }
 }

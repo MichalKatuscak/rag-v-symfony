@@ -71,7 +71,29 @@ Symfony AI (1.0.0-BETA1) se tu používá jen v experimentu E6. Proč, viz člá
 
 ## Výsledky
 
-Doplní se po měření na RTX 4060.
+Měřeno 1.–2. 11. 2026 na Windows 11 s RTX 4060 8 GB (Ollama 0.40.3, bge-m3, gemma4:e2b a gemma4:12b, temperature 0, seed 42). Dva plné běhy daly stejná čísla. Podrobnosti v [`vysledky/`](vysledky/), verze v [`vysledky/meta.json`](vysledky/meta.json).
+
+**Hledání** (91 otázek, každá s diakritikou i bez):
+
+| Varianta | hit@5 | MRR |
+|---|---|---|
+| vektor bge-m3 | 0,88 | 0,80 |
+| hybrid vektor + fulltext (RRF) | 0,84 | 0,70 |
+| fulltext s českým Hunspellem | 0,70 | 0,48 |
+| hybrid + reranker | **0,98** | **0,88** |
+
+Hybrid byl horší než samotný vektor, český slovník fulltextu uškodil, diakritika bge-m3 nevadí. Pomohl reranker.
+
+**Odpovědi** (91 otázek s odpovědí v podkladech, 26 mimo podklady):
+
+| Model / hledání | správně | chyb, kde chyběl správný úryvek | mimo podklady řekl „nevím“ |
+|---|---|---|---|
+| gemma4:e2b / vektor | 70 | 12 z 21 | 17 z 26 |
+| gemma4:12b / vektor | 79 | 11 z 12 | 23 z 26 |
+
+**Tiché chyby:** `/api/embed` s bge-m3 zpracuje jen 2 048 tokenů, dokud nenastavíte `num_ctx` i `num_batch`; `/api/chat` bez `num_ctx` ořízne dlouhý prompt i se system promptem; Symfony AI Store 1.0.0-BETA1 po přeindexování drží starou i novou verzi dokumentu; HNSW s filtrem bez `iterative_scan` vrátí místo 10 řádků průměrně 3,9.
+
+Vyhodnocení jsme po prvním běhu opravovali (kontrola citací, rozpoznání „nevím“, porovnání čísel). Odpovědi modelů se nezměnily, jen to, jak je kód hodnotí; přepočet dělá `app:prepocet` a každý soubor má pod klíčem `prepocet` důvod a původní souhrn.
 
 ## Licence
 

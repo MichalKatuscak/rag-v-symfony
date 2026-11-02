@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 # Všechna měření za sebou. Běží v kontejneru app: docker compose run --rm app bin/mereni
 # Výsledky: vysledky/*.json. Parametry: MODELY="maly velky" (výchozí), BEZ_RERANKERU=1.
-# Fáze: bin/mereni [vse|hledani|ostatni]. Reranker je potřeba jen pro „hledani“; spouštěcí skripty ho
+# Fáze: bin/mereni [vse|hledani|ostatni|odpovedi-rerank]. „odpovedi-rerank“ = E4 s rerankerem; reranker
+# musí běžet a na 8 GB GPU ubírá místo velkému modelu (časy proto nesrovnávat s ostatními během E4). Reranker je potřeba jen pro „hledani“; spouštěcí skripty ho
 # po ní zastaví, aby na 8 GB GPU nezabíral místo jazykovým modelům.
 set -euo pipefail
 cd "$(dirname "$0")/.."
@@ -30,6 +31,13 @@ krok "E1–E3 hledání"
 php bin/console app:mereni:hledani $RERANK_OPT
 fi
 [ "$FAZE" = "hledani" ] && exit 0
+
+if [ "$FAZE" = "odpovedi-rerank" ]; then
+  for m in $MODELY; do
+    krok "E4 odpovědi ($m, hybrid + reranker)"; php bin/console app:mereni:odpovedi --model "$m" --varianta hybrid_rerank
+  done
+  exit 0
+fi
 
 for m in $MODELY; do
   krok "E4 odpovědi ($m)";     php bin/console app:mereni:odpovedi --model "$m"

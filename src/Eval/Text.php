@@ -17,7 +17,8 @@ final class Text
     public static function forMatch(string $s): string
     {
         $s = mb_strtolower(self::stripDiacritics($s));
-        $s = preg_replace('/(\d)[ \x{00A0}](\d{3})/u', '$1$2', $s);
+        // Mezery mezi číslicemi pryč: „2 000“ = „2000“, „+420 500 600 700“ obsahuje „500 600 700“.
+        $s = preg_replace('/(?<=\d)[ \x{00A0}](?=\d)/u', '', $s);
         $s = str_replace(',', '.', $s);
 
         return (string) preg_replace('/\s+/u', ' ', $s);

@@ -7930,5 +7930,44 @@
                 "wall_ms": 1187.9
             }
         }
-    ]
+    ],
+    "prepocet": {
+        "kdy": "2026-11-02T18:01:23+00:00",
+        "duvod": "Oprava vyhodnocení po finálním běhu: porovnání faktů slučovalo mezery v číslech jen po trojicích, takže „+420 500 600 700“ neobsahovalo „500 600 700“ (q014). Odpovědi modelů jsou beze změny.",
+        "vyrazene_otazky": [],
+        "zmenena_kontrola_citaci": 0,
+        "zmeneny_verdikt": 0,
+        "puvodni_souhrn": {
+            "odpovedi_v_podkladech": {
+                "n": 91,
+                "spravne": 62,
+                "spatne": 20,
+                "falesne_nevim": 9,
+                "spatne_a_uryvek_chybel": 14,
+                "spatne_i_kdyz_uryvek_byl": 15
+            },
+            "neodpovezitelne": {
+                "n": 26,
+                "rekl_nevim": 15,
+                "vymyslel": 11
+            },
+            "kontrola_citaci": {
+                "spatnych_odpovedi": 31,
+                "spatnych_chycenych_kontrolou": 5,
+                "spravnych_odpovedi": 62,
+                "spravnych_oznacenych_kontrolou": 5,
+                "neplatny_usek": 6,
+                "citat_neni_v_uryvku": 2,
+                "cislo_mimo_citace": 2,
+                "bez_citace": 1,
+                "neplatny_json": 0,
+                "priznak_nevim_nesedi_s_textem": 20
+            },
+            "cas_ms": {
+                "p50": 1141.6,
+                "p95": 1869.6,
+                "prompt_tokens_p50": 1266.0
+            }
+        }
+    }
 }
