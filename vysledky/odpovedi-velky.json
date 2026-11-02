@@ -1,5 +1,5 @@
 {
-    "zmereno": "2026-11-01T16:31:32+00:00",
+    "zmereno": "2026-11-02T16:33:54+00:00",
     "popis": "E4: odpovědi modelu nad nalezenými úryvky, kontrola citací kódem, „nevím“ u otázek mimo podklady.",
     "model": "gemma4:12b",
     "varianta_hledani": "hybrid",
@@ -32,8 +32,8 @@
             "priznak_nevim_nesedi_s_textem": 2
         },
         "cas_ms": {
-            "p50": 14465.3,
-            "p95": 21497.8,
+            "p50": 14387.5,
+            "p95": 21099.1,
             "prompt_tokens_p50": 1270.0
         }
     },
@@ -98,11 +98,11 @@
             "metriky": {
                 "prompt_tokens": 1251,
                 "output_tokens": 140,
-                "total_ms": 22710.1,
-                "load_ms": 16750.9,
-                "prompt_ms": 1747.4,
-                "eval_ms": 4204.2,
-                "wall_ms": 22714.7
+                "total_ms": 23067.7,
+                "load_ms": 16912.6,
+                "prompt_ms": 1858.7,
+                "eval_ms": 4290.6,
+                "wall_ms": 23072.9
             }
         },
         {
@@ -169,11 +169,11 @@
             "metriky": {
                 "prompt_tokens": 1176,
                 "output_tokens": 276,
-                "total_ms": 18744.6,
-                "load_ms": 9032.3,
-                "prompt_ms": 1684.2,
-                "eval_ms": 8020.8,
-                "wall_ms": 18749.1
+                "total_ms": 19515.8,
+                "load_ms": 9620.5,
+                "prompt_ms": 1681.0,
+                "eval_ms": 8206.9,
+                "wall_ms": 19527.6
             }
         },
         {
@@ -236,11 +236,11 @@
             "metriky": {
                 "prompt_tokens": 1190,
                 "output_tokens": 84,
-                "total_ms": 12803.5,
-                "load_ms": 8589.8,
-                "prompt_ms": 1679.9,
-                "eval_ms": 2526.4,
-                "wall_ms": 12807.0
+                "total_ms": 13405.8,
+                "load_ms": 9071.0,
+                "prompt_ms": 1710.7,
+                "eval_ms": 2614.8,
+                "wall_ms": 13413.1
             }
         },
         {
@@ -307,11 +307,11 @@
             "metriky": {
                 "prompt_tokens": 1179,
                 "output_tokens": 282,
-                "total_ms": 19124.1,
-                "load_ms": 8577.0,
-                "prompt_ms": 1679.8,
-                "eval_ms": 8858.6,
-                "wall_ms": 19127.3
+                "total_ms": 20113.3,
+                "load_ms": 9308.2,
+                "prompt_ms": 1698.7,
+                "eval_ms": 9100.5,
+                "wall_ms": 20121.5
             }
         },
         {
@@ -382,11 +382,11 @@
             "metriky": {
                 "prompt_tokens": 1381,
                 "output_tokens": 471,
-                "total_ms": 24356.9,
-                "load_ms": 8837.0,
-                "prompt_ms": 1821.3,
-                "eval_ms": 13692.1,
-                "wall_ms": 24361.6
+                "total_ms": 24605.0,
+                "load_ms": 8800.4,
+                "prompt_ms": 1848.5,
+                "eval_ms": 13949.5,
+                "wall_ms": 24607.3
             }
         },
         {
@@ -449,11 +449,11 @@
             "metriky": {
                 "prompt_tokens": 1235,
                 "output_tokens": 101,
-                "total_ms": 13428.3,
-                "load_ms": 8565.3,
-                "prompt_ms": 1713.5,
-                "eval_ms": 3142.2,
-                "wall_ms": 13432.3
+                "total_ms": 13921.1,
+                "load_ms": 9041.0,
+                "prompt_ms": 1696.6,
+                "eval_ms": 3162.3,
+                "wall_ms": 13928.8
             }
         },
         {
@@ -513,11 +513,11 @@
             "metriky": {
                 "prompt_tokens": 1301,
                 "output_tokens": 38,
-                "total_ms": 11316.9,
-                "load_ms": 8572.3,
-                "prompt_ms": 1774.1,
-                "eval_ms": 963.1,
-                "wall_ms": 11320.7
+                "total_ms": 11577.7,
+                "load_ms": 8815.9,
+                "prompt_ms": 1796.7,
+                "eval_ms": 958.2,
+                "wall_ms": 11580.4
             }
         },
         {
@@ -584,11 +584,11 @@
             "metriky": {
                 "prompt_tokens": 1184,
                 "output_tokens": 249,
-                "total_ms": 18566.6,
-                "load_ms": 9074.0,
-                "prompt_ms": 1669.8,
-                "eval_ms": 7815.5,
-                "wall_ms": 18570.8
+                "total_ms": 18426.2,
+                "load_ms": 8811.7,
+                "prompt_ms": 1697.1,
+                "eval_ms": 7907.7,
+                "wall_ms": 18429.7
             }
         },
         {
@@ -651,11 +651,11 @@
             "metriky": {
                 "prompt_tokens": 1107,
                 "output_tokens": 131,
-                "total_ms": 13955.3,
-                "load_ms": 8558.7,
-                "prompt_ms": 1612.6,
-                "eval_ms": 3777.3,
-                "wall_ms": 13959.2
+                "total_ms": 14217.4,
+                "load_ms": 8816.9,
+                "prompt_ms": 1633.1,
+                "eval_ms": 3760.6,
+                "wall_ms": 14221.1
             }
         },
         {
@@ -718,11 +718,11 @@
             "metriky": {
                 "prompt_tokens": 1127,
                 "output_tokens": 176,
-                "total_ms": 14821.0,
-                "load_ms": 8555.0,
-                "prompt_ms": 1642.5,
-                "eval_ms": 4617.6,
-                "wall_ms": 14825.0
+                "total_ms": 15078.6,
+                "load_ms": 8830.1,
+                "prompt_ms": 1645.3,
+                "eval_ms": 4591.0,
+                "wall_ms": 15081.0
             }
         },
         {
@@ -793,11 +793,11 @@
             "metriky": {
                 "prompt_tokens": 1365,
                 "output_tokens": 319,
-                "total_ms": 20407.2,
-                "load_ms": 8576.7,
-                "prompt_ms": 1856.7,
-                "eval_ms": 9967.3,
-                "wall_ms": 20410.3
+                "total_ms": 20548.3,
+                "load_ms": 8800.1,
+                "prompt_ms": 1841.7,
+                "eval_ms": 9899.2,
+                "wall_ms": 20552.4
             }
         },
         {
@@ -874,11 +874,11 @@
             "metriky": {
                 "prompt_tokens": 1310,
                 "output_tokens": 267,
-                "total_ms": 17866.6,
-                "load_ms": 8591.7,
-                "prompt_ms": 1798.8,
-                "eval_ms": 7468.3,
-                "wall_ms": 17870.1
+                "total_ms": 17704.4,
+                "load_ms": 8592.2,
+                "prompt_ms": 1783.1,
+                "eval_ms": 7322.1,
+                "wall_ms": 17707.3
             }
         },
         {
@@ -945,11 +945,11 @@
             "metriky": {
                 "prompt_tokens": 1203,
                 "output_tokens": 177,
-                "total_ms": 16115.5,
-                "load_ms": 9368.7,
-                "prompt_ms": 1717.3,
-                "eval_ms": 5023.0,
-                "wall_ms": 16118.8
+                "total_ms": 15460.1,
+                "load_ms": 8818.6,
+                "prompt_ms": 1693.4,
+                "eval_ms": 4941.1,
+                "wall_ms": 15462.9
             }
         },
         {
@@ -1014,11 +1014,11 @@
             "metriky": {
                 "prompt_tokens": 1229,
                 "output_tokens": 95,
-                "total_ms": 14072.6,
-                "load_ms": 9096.5,
-                "prompt_ms": 1724.4,
-                "eval_ms": 3243.7,
-                "wall_ms": 14075.2
+                "total_ms": 13349.5,
+                "load_ms": 8615.0,
+                "prompt_ms": 1707.1,
+                "eval_ms": 3019.7,
+                "wall_ms": 13352.1
             }
         },
         {
@@ -1081,11 +1081,11 @@
             "metriky": {
                 "prompt_tokens": 1342,
                 "output_tokens": 100,
-                "total_ms": 13953.2,
-                "load_ms": 9069.6,
-                "prompt_ms": 1805.9,
-                "eval_ms": 3067.2,
-                "wall_ms": 13955.9
+                "total_ms": 13436.6,
+                "load_ms": 8576.3,
+                "prompt_ms": 1794.3,
+                "eval_ms": 3058.6,
+                "wall_ms": 13439.0
             }
         },
         {
@@ -1152,11 +1152,11 @@
             "metriky": {
                 "prompt_tokens": 1291,
                 "output_tokens": 137,
-                "total_ms": 14619.3,
-                "load_ms": 8821.7,
-                "prompt_ms": 1785.8,
-                "eval_ms": 4004.9,
-                "wall_ms": 14622.2
+                "total_ms": 14383.8,
+                "load_ms": 8614.8,
+                "prompt_ms": 1779.7,
+                "eval_ms": 3981.1,
+                "wall_ms": 14387.5
             }
         },
         {
@@ -1219,11 +1219,11 @@
             "metriky": {
                 "prompt_tokens": 1186,
                 "output_tokens": 133,
-                "total_ms": 14294.4,
-                "load_ms": 8574.4,
-                "prompt_ms": 1671.6,
-                "eval_ms": 4041.9,
-                "wall_ms": 14297.2
+                "total_ms": 14311.4,
+                "load_ms": 8587.2,
+                "prompt_ms": 1687.5,
+                "eval_ms": 4027.5,
+                "wall_ms": 14313.7
             }
         },
         {
@@ -1286,11 +1286,11 @@
             "metriky": {
                 "prompt_tokens": 1218,
                 "output_tokens": 215,
-                "total_ms": 16680.4,
-                "load_ms": 8574.3,
-                "prompt_ms": 1725.4,
-                "eval_ms": 6368.9,
-                "wall_ms": 16683.5
+                "total_ms": 16668.0,
+                "load_ms": 8576.0,
+                "prompt_ms": 1723.9,
+                "eval_ms": 6359.5,
+                "wall_ms": 16670.8
             }
         },
         {
@@ -1353,11 +1353,11 @@
             "metriky": {
                 "prompt_tokens": 1266,
                 "output_tokens": 121,
-                "total_ms": 14208.6,
-                "load_ms": 8564.6,
-                "prompt_ms": 1743.7,
-                "eval_ms": 3892.6,
-                "wall_ms": 14212.6
+                "total_ms": 14510.1,
+                "load_ms": 8850.3,
+                "prompt_ms": 1745.6,
+                "eval_ms": 3905.6,
+                "wall_ms": 14512.0
             }
         },
         {
@@ -1420,11 +1420,11 @@
             "metriky": {
                 "prompt_tokens": 1259,
                 "output_tokens": 88,
-                "total_ms": 13146.4,
-                "load_ms": 8570.0,
-                "prompt_ms": 1728.1,
-                "eval_ms": 2840.3,
-                "wall_ms": 13148.5
+                "total_ms": 18497.4,
+                "load_ms": 13847.5,
+                "prompt_ms": 1831.0,
+                "eval_ms": 2812.9,
+                "wall_ms": 18500.0
             }
         },
         {
@@ -1495,11 +1495,11 @@
             "metriky": {
                 "prompt_tokens": 1161,
                 "output_tokens": 328,
-                "total_ms": 20702.6,
-                "load_ms": 8838.6,
-                "prompt_ms": 1664.2,
-                "eval_ms": 10193.6,
-                "wall_ms": 20707.6
+                "total_ms": 20221.0,
+                "load_ms": 8336.5,
+                "prompt_ms": 1663.5,
+                "eval_ms": 10208.0,
+                "wall_ms": 20225.2
             }
         },
         {
@@ -1562,11 +1562,11 @@
             "metriky": {
                 "prompt_tokens": 1268,
                 "output_tokens": 162,
-                "total_ms": 15291.8,
-                "load_ms": 8577.3,
-                "prompt_ms": 1745.6,
-                "eval_ms": 4961.1,
-                "wall_ms": 15294.9
+                "total_ms": 15273.2,
+                "load_ms": 8586.8,
+                "prompt_ms": 1729.5,
+                "eval_ms": 4943.6,
+                "wall_ms": 15275.7
             }
         },
         {
@@ -1629,11 +1629,11 @@
             "metriky": {
                 "prompt_tokens": 1311,
                 "output_tokens": 184,
-                "total_ms": 15614.3,
-                "load_ms": 8555.8,
-                "prompt_ms": 1798.5,
-                "eval_ms": 5250.4,
-                "wall_ms": 15619.1
+                "total_ms": 15345.9,
+                "load_ms": 8308.9,
+                "prompt_ms": 1763.3,
+                "eval_ms": 5266.8,
+                "wall_ms": 15348.0
             }
         },
         {
@@ -1696,11 +1696,11 @@
             "metriky": {
                 "prompt_tokens": 1168,
                 "output_tokens": 98,
-                "total_ms": 13264.0,
-                "load_ms": 8556.0,
-                "prompt_ms": 1667.2,
-                "eval_ms": 3033.0,
-                "wall_ms": 13268.3
+                "total_ms": 13024.2,
+                "load_ms": 8302.6,
+                "prompt_ms": 1666.6,
+                "eval_ms": 3047.6,
+                "wall_ms": 13026.1
             }
         },
         {
@@ -1763,11 +1763,11 @@
             "metriky": {
                 "prompt_tokens": 1203,
                 "output_tokens": 117,
-                "total_ms": 14517.2,
-                "load_ms": 8556.1,
-                "prompt_ms": 1698.1,
-                "eval_ms": 4255.2,
-                "wall_ms": 14521.4
+                "total_ms": 14325.4,
+                "load_ms": 8343.2,
+                "prompt_ms": 1687.5,
+                "eval_ms": 4286.5,
+                "wall_ms": 14328.2
             }
         },
         {
@@ -1830,11 +1830,11 @@
             "metriky": {
                 "prompt_tokens": 1342,
                 "output_tokens": 104,
-                "total_ms": 13734.4,
-                "load_ms": 8827.2,
-                "prompt_ms": 1828.9,
-                "eval_ms": 3066.6,
-                "wall_ms": 13738.6
+                "total_ms": 13439.0,
+                "load_ms": 8557.5,
+                "prompt_ms": 1817.1,
+                "eval_ms": 3056.3,
+                "wall_ms": 13441.2
             }
         },
         {
@@ -1897,11 +1897,11 @@
             "metriky": {
                 "prompt_tokens": 1299,
                 "output_tokens": 108,
-                "total_ms": 15281.7,
-                "load_ms": 9854.2,
-                "prompt_ms": 1785.8,
-                "eval_ms": 3635.7,
-                "wall_ms": 15284.5
+                "total_ms": 13717.7,
+                "load_ms": 8312.7,
+                "prompt_ms": 1763.6,
+                "eval_ms": 3634.2,
+                "wall_ms": 13720.7
             }
         },
         {
@@ -1964,11 +1964,11 @@
             "metriky": {
                 "prompt_tokens": 1181,
                 "output_tokens": 95,
-                "total_ms": 13470.1,
-                "load_ms": 8576.5,
-                "prompt_ms": 1679.6,
-                "eval_ms": 3206.7,
-                "wall_ms": 13474.0
+                "total_ms": 13241.2,
+                "load_ms": 8320.0,
+                "prompt_ms": 1687.9,
+                "eval_ms": 3220.5,
+                "wall_ms": 13244.7
             }
         },
         {
@@ -2035,11 +2035,11 @@
             "metriky": {
                 "prompt_tokens": 1282,
                 "output_tokens": 217,
-                "total_ms": 16651.8,
-                "load_ms": 8570.4,
-                "prompt_ms": 1789.6,
-                "eval_ms": 6284.3,
-                "wall_ms": 16654.8
+                "total_ms": 16375.8,
+                "load_ms": 8319.2,
+                "prompt_ms": 1748.4,
+                "eval_ms": 6301.2,
+                "wall_ms": 16377.9
             }
         },
         {
@@ -2102,11 +2102,11 @@
             "metriky": {
                 "prompt_tokens": 1257,
                 "output_tokens": 105,
-                "total_ms": 13693.1,
-                "load_ms": 8616.5,
+                "total_ms": 13633.7,
+                "load_ms": 8551.9,
                 "prompt_ms": 1728.5,
-                "eval_ms": 3337.1,
-                "wall_ms": 13695.9
+                "eval_ms": 3341.0,
+                "wall_ms": 13636.3
             }
         },
         {
@@ -2169,11 +2169,11 @@
             "metriky": {
                 "prompt_tokens": 1352,
                 "output_tokens": 110,
-                "total_ms": 14040.4,
-                "load_ms": 8840.8,
-                "prompt_ms": 1832.5,
-                "eval_ms": 3359.5,
-                "wall_ms": 14043.1
+                "total_ms": 13461.9,
+                "load_ms": 8309.3,
+                "prompt_ms": 1809.5,
+                "eval_ms": 3335.3,
+                "wall_ms": 13465.2
             }
         },
         {
@@ -2240,11 +2240,11 @@
             "metriky": {
                 "prompt_tokens": 1261,
                 "output_tokens": 156,
-                "total_ms": 15157.5,
-                "load_ms": 8587.7,
-                "prompt_ms": 1734.6,
-                "eval_ms": 4825.0,
-                "wall_ms": 15159.9
+                "total_ms": 15172.8,
+                "load_ms": 8572.1,
+                "prompt_ms": 1729.3,
+                "eval_ms": 4861.9,
+                "wall_ms": 15175.5
             }
         },
         {
@@ -2313,11 +2313,11 @@
             "metriky": {
                 "prompt_tokens": 1333,
                 "output_tokens": 246,
-                "total_ms": 18513.7,
-                "load_ms": 8582.0,
-                "prompt_ms": 1840.2,
-                "eval_ms": 8084.1,
-                "wall_ms": 18517.3
+                "total_ms": 18273.0,
+                "load_ms": 8307.5,
+                "prompt_ms": 1787.9,
+                "eval_ms": 8169.4,
+                "wall_ms": 18276.1
             }
         },
         {
@@ -2380,11 +2380,11 @@
             "metriky": {
                 "prompt_tokens": 1242,
                 "output_tokens": 107,
-                "total_ms": 13700.8,
-                "load_ms": 8816.2,
-                "prompt_ms": 1728.0,
-                "eval_ms": 3144.6,
-                "wall_ms": 13704.1
+                "total_ms": 13429.8,
+                "load_ms": 8566.0,
+                "prompt_ms": 1713.1,
+                "eval_ms": 3143.2,
+                "wall_ms": 13431.0
             }
         },
         {
@@ -2447,11 +2447,11 @@
             "metriky": {
                 "prompt_tokens": 1379,
                 "output_tokens": 100,
-                "total_ms": 13245.5,
-                "load_ms": 8548.7,
-                "prompt_ms": 1815.1,
-                "eval_ms": 2874.5,
-                "wall_ms": 13249.9
+                "total_ms": 13053.2,
+                "load_ms": 8304.9,
+                "prompt_ms": 1835.8,
+                "eval_ms": 2905.9,
+                "wall_ms": 13055.2
             }
         },
         {
@@ -2511,11 +2511,11 @@
             "metriky": {
                 "prompt_tokens": 1347,
                 "output_tokens": 38,
-                "total_ms": 11717.4,
-                "load_ms": 8839.2,
-                "prompt_ms": 1820.8,
-                "eval_ms": 1048.2,
-                "wall_ms": 11721.2
+                "total_ms": 11181.6,
+                "load_ms": 8327.8,
+                "prompt_ms": 1790.7,
+                "eval_ms": 1056.1,
+                "wall_ms": 11184.0
             }
         },
         {
@@ -2578,11 +2578,11 @@
             "metriky": {
                 "prompt_tokens": 1187,
                 "output_tokens": 149,
-                "total_ms": 14645.0,
-                "load_ms": 8567.1,
-                "prompt_ms": 1713.8,
-                "eval_ms": 4349.2,
-                "wall_ms": 14647.8
+                "total_ms": 14953.6,
+                "load_ms": 8837.4,
+                "prompt_ms": 1702.0,
+                "eval_ms": 4407.1,
+                "wall_ms": 14956.2
             }
         },
         {
@@ -2645,11 +2645,11 @@
             "metriky": {
                 "prompt_tokens": 1226,
                 "output_tokens": 121,
-                "total_ms": 13985.3,
-                "load_ms": 8583.0,
-                "prompt_ms": 1715.3,
-                "eval_ms": 3680.7,
-                "wall_ms": 13988.0
+                "total_ms": 14002.0,
+                "load_ms": 8594.1,
+                "prompt_ms": 1706.7,
+                "eval_ms": 3694.0,
+                "wall_ms": 14005.3
             }
         },
         {
@@ -2712,11 +2712,11 @@
             "metriky": {
                 "prompt_tokens": 1166,
                 "output_tokens": 150,
-                "total_ms": 14747.2,
-                "load_ms": 8593.3,
-                "prompt_ms": 1680.8,
-                "eval_ms": 4466.1,
-                "wall_ms": 14749.7
+                "total_ms": 14772.3,
+                "load_ms": 8580.0,
+                "prompt_ms": 1669.8,
+                "eval_ms": 4515.5,
+                "wall_ms": 14774.9
             }
         },
         {
@@ -2779,11 +2779,11 @@
             "metriky": {
                 "prompt_tokens": 1248,
                 "output_tokens": 91,
-                "total_ms": 13550.2,
-                "load_ms": 8822.6,
-                "prompt_ms": 1719.2,
-                "eval_ms": 3003.1,
-                "wall_ms": 13554.7
+                "total_ms": 13305.0,
+                "load_ms": 8571.0,
+                "prompt_ms": 1707.9,
+                "eval_ms": 3018.3,
+                "wall_ms": 13307.8
             }
         },
         {
@@ -2852,11 +2852,11 @@
             "metriky": {
                 "prompt_tokens": 1295,
                 "output_tokens": 252,
-                "total_ms": 17651.7,
-                "load_ms": 8544.5,
-                "prompt_ms": 1787.9,
-                "eval_ms": 7311.8,
-                "wall_ms": 17654.6
+                "total_ms": 18011.9,
+                "load_ms": 8844.3,
+                "prompt_ms": 1781.0,
+                "eval_ms": 7379.5,
+                "wall_ms": 18014.6
             }
         },
         {
@@ -2921,11 +2921,11 @@
             "metriky": {
                 "prompt_tokens": 1253,
                 "output_tokens": 130,
-                "total_ms": 14434.3,
-                "load_ms": 8567.0,
-                "prompt_ms": 1728.4,
-                "eval_ms": 4130.6,
-                "wall_ms": 14437.9
+                "total_ms": 14480.6,
+                "load_ms": 8577.6,
+                "prompt_ms": 1724.4,
+                "eval_ms": 4170.5,
+                "wall_ms": 14483.4
             }
         },
         {
@@ -2996,11 +2996,11 @@
             "metriky": {
                 "prompt_tokens": 1264,
                 "output_tokens": 392,
-                "total_ms": 21495.2,
-                "load_ms": 8566.3,
-                "prompt_ms": 1740.6,
-                "eval_ms": 11176.5,
-                "wall_ms": 21497.8
+                "total_ms": 21658.8,
+                "load_ms": 8604.3,
+                "prompt_ms": 1716.8,
+                "eval_ms": 11330.3,
+                "wall_ms": 21661.7
             }
         },
         {
@@ -3063,11 +3063,11 @@
             "metriky": {
                 "prompt_tokens": 1196,
                 "output_tokens": 169,
-                "total_ms": 15805.7,
-                "load_ms": 8577.2,
-                "prompt_ms": 1688.8,
-                "eval_ms": 5532.4,
-                "wall_ms": 15808.2
+                "total_ms": 15858.5,
+                "load_ms": 8553.8,
+                "prompt_ms": 1703.4,
+                "eval_ms": 5594.5,
+                "wall_ms": 15861.6
             }
         },
         {
@@ -3130,11 +3130,11 @@
             "metriky": {
                 "prompt_tokens": 1251,
                 "output_tokens": 205,
-                "total_ms": 16870.7,
-                "load_ms": 8579.6,
-                "prompt_ms": 1733.4,
-                "eval_ms": 6540.0,
-                "wall_ms": 16873.5
+                "total_ms": 17266.5,
+                "load_ms": 8832.5,
+                "prompt_ms": 1724.5,
+                "eval_ms": 6701.0,
+                "wall_ms": 17269.0
             }
         },
         {
@@ -3197,11 +3197,11 @@
             "metriky": {
                 "prompt_tokens": 1207,
                 "output_tokens": 140,
-                "total_ms": 14460.8,
-                "load_ms": 8563.3,
-                "prompt_ms": 1706.0,
-                "eval_ms": 4186.0,
-                "wall_ms": 14465.3
+                "total_ms": 14881.9,
+                "load_ms": 8819.4,
+                "prompt_ms": 1710.9,
+                "eval_ms": 4343.0,
+                "wall_ms": 14884.3
             }
         },
         {
@@ -3264,11 +3264,11 @@
             "metriky": {
                 "prompt_tokens": 1280,
                 "output_tokens": 160,
-                "total_ms": 15227.1,
-                "load_ms": 8301.5,
-                "prompt_ms": 1723.7,
-                "eval_ms": 5193.3,
-                "wall_ms": 15232.1
+                "total_ms": 16017.4,
+                "load_ms": 8818.6,
+                "prompt_ms": 1740.1,
+                "eval_ms": 5451.3,
+                "wall_ms": 16019.5
             }
         },
         {
@@ -3328,11 +3328,11 @@
             "metriky": {
                 "prompt_tokens": 1276,
                 "output_tokens": 38,
-                "total_ms": 11266.6,
-                "load_ms": 8351.7,
-                "prompt_ms": 1692.1,
-                "eval_ms": 1215.7,
-                "wall_ms": 11268.9
+                "total_ms": 12114.9,
+                "load_ms": 9092.7,
+                "prompt_ms": 1738.5,
+                "eval_ms": 1275.9,
+                "wall_ms": 12117.1
             }
         },
         {
@@ -3399,11 +3399,11 @@
             "metriky": {
                 "prompt_tokens": 1329,
                 "output_tokens": 261,
-                "total_ms": 17673.3,
-                "load_ms": 8299.2,
-                "prompt_ms": 1794.4,
-                "eval_ms": 7572.1,
-                "wall_ms": 17677.9
+                "total_ms": 18134.5,
+                "load_ms": 8565.7,
+                "prompt_ms": 1792.8,
+                "eval_ms": 7768.6,
+                "wall_ms": 18138.1
             }
         },
         {
@@ -3466,11 +3466,11 @@
             "metriky": {
                 "prompt_tokens": 1307,
                 "output_tokens": 105,
-                "total_ms": 13962.4,
-                "load_ms": 8562.7,
-                "prompt_ms": 1796.5,
-                "eval_ms": 3595.8,
-                "wall_ms": 13964.7
+                "total_ms": 13945.4,
+                "load_ms": 8602.0,
+                "prompt_ms": 1762.4,
+                "eval_ms": 3573.7,
+                "wall_ms": 13948.0
             }
         },
         {
@@ -3530,11 +3530,11 @@
             "metriky": {
                 "prompt_tokens": 1352,
                 "output_tokens": 30,
-                "total_ms": 11565.3,
-                "load_ms": 8586.3,
-                "prompt_ms": 1833.8,
-                "eval_ms": 1137.8,
-                "wall_ms": 11568.9
+                "total_ms": 11523.5,
+                "load_ms": 8568.4,
+                "prompt_ms": 1810.0,
+                "eval_ms": 1134.2,
+                "wall_ms": 11526.1
             }
         },
         {
@@ -3597,11 +3597,11 @@
             "metriky": {
                 "prompt_tokens": 1287,
                 "output_tokens": 149,
-                "total_ms": 14875.9,
-                "load_ms": 8557.6,
-                "prompt_ms": 1783.3,
-                "eval_ms": 4528.0,
-                "wall_ms": 14878.5
+                "total_ms": 14904.7,
+                "load_ms": 8569.2,
+                "prompt_ms": 1786.7,
+                "eval_ms": 4541.9,
+                "wall_ms": 14909.1
             }
         },
         {
@@ -3680,11 +3680,11 @@
             "metriky": {
                 "prompt_tokens": 1215,
                 "output_tokens": 397,
-                "total_ms": 21908.0,
-                "load_ms": 8560.5,
-                "prompt_ms": 1685.9,
-                "eval_ms": 11648.3,
-                "wall_ms": 21913.4
+                "total_ms": 21833.5,
+                "load_ms": 8571.8,
+                "prompt_ms": 1683.8,
+                "eval_ms": 11570.8,
+                "wall_ms": 21838.1
             }
         },
         {
@@ -3744,11 +3744,11 @@
             "metriky": {
                 "prompt_tokens": 1206,
                 "output_tokens": 30,
-                "total_ms": 11403.1,
-                "load_ms": 8555.8,
-                "prompt_ms": 1703.0,
-                "eval_ms": 1137.1,
-                "wall_ms": 11407.2
+                "total_ms": 11391.5,
+                "load_ms": 8565.0,
+                "prompt_ms": 1692.0,
+                "eval_ms": 1127.1,
+                "wall_ms": 11394.9
             }
         },
         {
@@ -3808,11 +3808,11 @@
             "metriky": {
                 "prompt_tokens": 1236,
                 "output_tokens": 30,
-                "total_ms": 11343.1,
-                "load_ms": 8582.2,
-                "prompt_ms": 1706.3,
-                "eval_ms": 1048.2,
-                "wall_ms": 11346.9
+                "total_ms": 11346.0,
+                "load_ms": 8573.5,
+                "prompt_ms": 1710.4,
+                "eval_ms": 1054.8,
+                "wall_ms": 11348.5
             }
         },
         {
@@ -3875,11 +3875,11 @@
             "metriky": {
                 "prompt_tokens": 1313,
                 "output_tokens": 236,
-                "total_ms": 18406.6,
-                "load_ms": 8570.6,
-                "prompt_ms": 1808.5,
-                "eval_ms": 8020.1,
-                "wall_ms": 18410.9
+                "total_ms": 19405.6,
+                "load_ms": 9133.3,
+                "prompt_ms": 1814.5,
+                "eval_ms": 8449.1,
+                "wall_ms": 19407.8
             }
         },
         {
@@ -3952,11 +3952,11 @@
             "metriky": {
                 "prompt_tokens": 1273,
                 "output_tokens": 327,
-                "total_ms": 20515.8,
-                "load_ms": 8563.2,
-                "prompt_ms": 1723.5,
-                "eval_ms": 10221.8,
-                "wall_ms": 20520.0
+                "total_ms": 20653.1,
+                "load_ms": 8826.7,
+                "prompt_ms": 1721.0,
+                "eval_ms": 10097.7,
+                "wall_ms": 20657.5
             }
         },
         {
@@ -4019,11 +4019,11 @@
             "metriky": {
                 "prompt_tokens": 1317,
                 "output_tokens": 229,
-                "total_ms": 17809.4,
-                "load_ms": 8550.9,
-                "prompt_ms": 1812.5,
-                "eval_ms": 7438.1,
-                "wall_ms": 17812.2
+                "total_ms": 17755.7,
+                "load_ms": 8565.5,
+                "prompt_ms": 1801.7,
+                "eval_ms": 7380.5,
+                "wall_ms": 17758.8
             }
         },
         {
@@ -4086,11 +4086,11 @@
             "metriky": {
                 "prompt_tokens": 1214,
                 "output_tokens": 164,
-                "total_ms": 15153.4,
-                "load_ms": 8575.8,
-                "prompt_ms": 1689.1,
-                "eval_ms": 4881.4,
-                "wall_ms": 15155.8
+                "total_ms": 15084.0,
+                "load_ms": 8570.9,
+                "prompt_ms": 1676.1,
+                "eval_ms": 4829.8,
+                "wall_ms": 15087.0
             }
         },
         {
@@ -4161,11 +4161,11 @@
             "metriky": {
                 "prompt_tokens": 1167,
                 "output_tokens": 284,
-                "total_ms": 19261.6,
-                "load_ms": 8580.7,
-                "prompt_ms": 1675.7,
-                "eval_ms": 8996.8,
-                "wall_ms": 19265.4
+                "total_ms": 18808.0,
+                "load_ms": 8295.7,
+                "prompt_ms": 1646.8,
+                "eval_ms": 8858.1,
+                "wall_ms": 18812.3
             }
         },
         {
@@ -4236,11 +4236,11 @@
             "metriky": {
                 "prompt_tokens": 1167,
                 "output_tokens": 295,
-                "total_ms": 19291.2,
-                "load_ms": 8598.2,
-                "prompt_ms": 1681.9,
-                "eval_ms": 9003.3,
-                "wall_ms": 19293.2
+                "total_ms": 20049.5,
+                "load_ms": 9318.5,
+                "prompt_ms": 1682.9,
+                "eval_ms": 9039.7,
+                "wall_ms": 20051.9
             }
         },
         {
@@ -4300,11 +4300,11 @@
             "metriky": {
                 "prompt_tokens": 1151,
                 "output_tokens": 38,
-                "total_ms": 11177.9,
-                "load_ms": 8572.3,
-                "prompt_ms": 1641.9,
-                "eval_ms": 955.9,
-                "wall_ms": 11180.4
+                "total_ms": 11147.3,
+                "load_ms": 8558.2,
+                "prompt_ms": 1639.4,
+                "eval_ms": 942.6,
+                "wall_ms": 11149.9
             }
         },
         {
@@ -4364,11 +4364,11 @@
             "metriky": {
                 "prompt_tokens": 1262,
                 "output_tokens": 38,
-                "total_ms": 11494.8,
-                "load_ms": 8603.1,
-                "prompt_ms": 1729.7,
-                "eval_ms": 1154.9,
-                "wall_ms": 11498.6
+                "total_ms": 11442.2,
+                "load_ms": 8577.8,
+                "prompt_ms": 1727.2,
+                "eval_ms": 1130.8,
+                "wall_ms": 11444.6
             }
         },
         {
@@ -4437,11 +4437,11 @@
             "metriky": {
                 "prompt_tokens": 1392,
                 "output_tokens": 218,
-                "total_ms": 17240.4,
-                "load_ms": 8556.5,
-                "prompt_ms": 1835.1,
-                "eval_ms": 6842.3,
-                "wall_ms": 17244.8
+                "total_ms": 17203.5,
+                "load_ms": 8578.9,
+                "prompt_ms": 1826.5,
+                "eval_ms": 6791.0,
+                "wall_ms": 17206.6
             }
         },
         {
@@ -4516,11 +4516,11 @@
             "metriky": {
                 "prompt_tokens": 1254,
                 "output_tokens": 466,
-                "total_ms": 24228.3,
-                "load_ms": 8551.7,
-                "prompt_ms": 1730.9,
-                "eval_ms": 13930.2,
-                "wall_ms": 24232.3
+                "total_ms": 24184.5,
+                "load_ms": 8556.9,
+                "prompt_ms": 1715.5,
+                "eval_ms": 13901.1,
+                "wall_ms": 24187.3
             }
         },
         {
@@ -4583,11 +4583,11 @@
             "metriky": {
                 "prompt_tokens": 1245,
                 "output_tokens": 176,
-                "total_ms": 15228.2,
-                "load_ms": 8302.1,
-                "prompt_ms": 1704.8,
-                "eval_ms": 5214.7,
-                "wall_ms": 15231.2
+                "total_ms": 15174.8,
+                "load_ms": 8333.0,
+                "prompt_ms": 1688.8,
+                "eval_ms": 5145.4,
+                "wall_ms": 15178.1
             }
         },
         {
@@ -4656,11 +4656,11 @@
             "metriky": {
                 "prompt_tokens": 1486,
                 "output_tokens": 197,
-                "total_ms": 16479.0,
-                "load_ms": 8319.9,
-                "prompt_ms": 1918.5,
-                "eval_ms": 6235.3,
-                "wall_ms": 16481.9
+                "total_ms": 16356.8,
+                "load_ms": 8335.6,
+                "prompt_ms": 1889.8,
+                "eval_ms": 6124.7,
+                "wall_ms": 16359.4
             }
         },
         {
@@ -4723,11 +4723,11 @@
             "metriky": {
                 "prompt_tokens": 1269,
                 "output_tokens": 185,
-                "total_ms": 16064.6,
-                "load_ms": 8806.0,
-                "prompt_ms": 1713.7,
-                "eval_ms": 5537.5,
-                "wall_ms": 16067.8
+                "total_ms": 15518.0,
+                "load_ms": 8334.4,
+                "prompt_ms": 1700.7,
+                "eval_ms": 5475.9,
+                "wall_ms": 15521.9
             }
         },
         {
@@ -4806,11 +4806,11 @@
             "metriky": {
                 "prompt_tokens": 1340,
                 "output_tokens": 673,
-                "total_ms": 30896.1,
-                "load_ms": 8549.3,
-                "prompt_ms": 1812.9,
-                "eval_ms": 20527.0,
-                "wall_ms": 30899.4
+                "total_ms": 30279.1,
+                "load_ms": 8292.3,
+                "prompt_ms": 1794.0,
+                "eval_ms": 20185.3,
+                "wall_ms": 30282.8
             }
         },
         {
@@ -4881,11 +4881,11 @@
             "metriky": {
                 "prompt_tokens": 1511,
                 "output_tokens": 304,
-                "total_ms": 18901.6,
-                "load_ms": 8319.2,
-                "prompt_ms": 1937.5,
-                "eval_ms": 8637.5,
-                "wall_ms": 18903.8
+                "total_ms": 18540.7,
+                "load_ms": 8078.6,
+                "prompt_ms": 1905.3,
+                "eval_ms": 8549.9,
+                "wall_ms": 18543.5
             }
         },
         {
@@ -4948,11 +4948,11 @@
             "metriky": {
                 "prompt_tokens": 1386,
                 "output_tokens": 142,
-                "total_ms": 15189.2,
-                "load_ms": 8580.1,
-                "prompt_ms": 1847.2,
-                "eval_ms": 4745.9,
-                "wall_ms": 15193.1
+                "total_ms": 14854.5,
+                "load_ms": 8336.0,
+                "prompt_ms": 1818.9,
+                "eval_ms": 4693.2,
+                "wall_ms": 14856.6
             }
         },
         {
@@ -5015,11 +5015,11 @@
             "metriky": {
                 "prompt_tokens": 1329,
                 "output_tokens": 190,
-                "total_ms": 15749.3,
-                "load_ms": 8303.5,
-                "prompt_ms": 1786.9,
-                "eval_ms": 5651.9,
-                "wall_ms": 15751.6
+                "total_ms": 15747.2,
+                "load_ms": 8324.1,
+                "prompt_ms": 1799.2,
+                "eval_ms": 5608.1,
+                "wall_ms": 15749.7
             }
         },
         {
@@ -5082,11 +5082,11 @@
             "metriky": {
                 "prompt_tokens": 1333,
                 "output_tokens": 88,
-                "total_ms": 12957.1,
-                "load_ms": 8320.0,
-                "prompt_ms": 1811.1,
-                "eval_ms": 2818.7,
-                "wall_ms": 12960.8
+                "total_ms": 12655.9,
+                "load_ms": 8073.9,
+                "prompt_ms": 1772.4,
+                "eval_ms": 2801.9,
+                "wall_ms": 12658.2
             }
         },
         {
@@ -5146,11 +5146,11 @@
             "metriky": {
                 "prompt_tokens": 1397,
                 "output_tokens": 66,
-                "total_ms": 12726.1,
-                "load_ms": 8561.4,
-                "prompt_ms": 1835.7,
-                "eval_ms": 2317.8,
-                "wall_ms": 12729.1
+                "total_ms": 12475.1,
+                "load_ms": 8350.0,
+                "prompt_ms": 1833.2,
+                "eval_ms": 2279.1,
+                "wall_ms": 12478.0
             }
         },
         {
@@ -5213,11 +5213,11 @@
             "metriky": {
                 "prompt_tokens": 1217,
                 "output_tokens": 376,
-                "total_ms": 21862.0,
-                "load_ms": 8552.6,
-                "prompt_ms": 1726.9,
-                "eval_ms": 11571.9,
-                "wall_ms": 21866.1
+                "total_ms": 21094.8,
+                "load_ms": 8309.3,
+                "prompt_ms": 1691.7,
+                "eval_ms": 11086.5,
+                "wall_ms": 21099.1
             }
         },
         {
@@ -5280,11 +5280,11 @@
             "metriky": {
                 "prompt_tokens": 1355,
                 "output_tokens": 104,
-                "total_ms": 13117.3,
-                "load_ms": 8332.3,
-                "prompt_ms": 1798.4,
-                "eval_ms": 2976.0,
-                "wall_ms": 13120.7
+                "total_ms": 12884.9,
+                "load_ms": 8085.8,
+                "prompt_ms": 1780.1,
+                "eval_ms": 3012.9,
+                "wall_ms": 12888.8
             }
         },
         {
@@ -5351,11 +5351,11 @@
             "metriky": {
                 "prompt_tokens": 1261,
                 "output_tokens": 211,
-                "total_ms": 15910.8,
-                "load_ms": 8065.6,
-                "prompt_ms": 1700.0,
-                "eval_ms": 6138.4,
-                "wall_ms": 15914.1
+                "total_ms": 16319.0,
+                "load_ms": 8343.5,
+                "prompt_ms": 1727.8,
+                "eval_ms": 6234.7,
+                "wall_ms": 16322.2
             }
         },
         {
@@ -5418,11 +5418,11 @@
             "metriky": {
                 "prompt_tokens": 1331,
                 "output_tokens": 184,
-                "total_ms": 15169.0,
-                "load_ms": 8048.0,
-                "prompt_ms": 1778.5,
-                "eval_ms": 5334.7,
-                "wall_ms": 15172.3
+                "total_ms": 19081.5,
+                "load_ms": 11779.0,
+                "prompt_ms": 1811.3,
+                "eval_ms": 5485.1,
+                "wall_ms": 19083.8
             }
         },
         {
@@ -5487,11 +5487,11 @@
             "metriky": {
                 "prompt_tokens": 1153,
                 "output_tokens": 120,
-                "total_ms": 17153.5,
-                "load_ms": 11596.1,
-                "prompt_ms": 1651.5,
-                "eval_ms": 3892.9,
-                "wall_ms": 17158.4
+                "total_ms": 13561.8,
+                "load_ms": 8088.4,
+                "prompt_ms": 1629.6,
+                "eval_ms": 3838.4,
+                "wall_ms": 13565.5
             }
         },
         {
@@ -5552,11 +5552,11 @@
             "metriky": {
                 "prompt_tokens": 1276,
                 "output_tokens": 30,
-                "total_ms": 11256.0,
-                "load_ms": 8595.0,
-                "prompt_ms": 1718.3,
-                "eval_ms": 934.5,
-                "wall_ms": 11259.2
+                "total_ms": 10708.6,
+                "load_ms": 8056.4,
+                "prompt_ms": 1712.5,
+                "eval_ms": 933.4,
+                "wall_ms": 10712.2
             }
         },
         {
@@ -5623,11 +5623,11 @@
             "metriky": {
                 "prompt_tokens": 1302,
                 "output_tokens": 237,
-                "total_ms": 16713.3,
-                "load_ms": 8023.4,
-                "prompt_ms": 1733.4,
-                "eval_ms": 6949.6,
-                "wall_ms": 16717.5
+                "total_ms": 17100.3,
+                "load_ms": 8360.0,
+                "prompt_ms": 1754.7,
+                "eval_ms": 6971.8,
+                "wall_ms": 17104.0
             }
         },
         {
@@ -5700,11 +5700,11 @@
             "metriky": {
                 "prompt_tokens": 1232,
                 "output_tokens": 279,
-                "total_ms": 18091.4,
-                "load_ms": 8049.4,
-                "prompt_ms": 1669.0,
-                "eval_ms": 8365.8,
-                "wall_ms": 18094.2
+                "total_ms": 18220.3,
+                "load_ms": 8075.0,
+                "prompt_ms": 1680.9,
+                "eval_ms": 8457.8,
+                "wall_ms": 18223.0
             }
         },
         {
@@ -5767,11 +5767,11 @@
             "metriky": {
                 "prompt_tokens": 1323,
                 "output_tokens": 206,
-                "total_ms": 15833.3,
-                "load_ms": 8053.6,
-                "prompt_ms": 1753.9,
-                "eval_ms": 6018.6,
-                "wall_ms": 15836.3
+                "total_ms": 16202.4,
+                "load_ms": 8331.0,
+                "prompt_ms": 1798.1,
+                "eval_ms": 6060.1,
+                "wall_ms": 16204.8
             }
         },
         {
@@ -5838,11 +5838,11 @@
             "metriky": {
                 "prompt_tokens": 1296,
                 "output_tokens": 116,
-                "total_ms": 13692.2,
-                "load_ms": 8324.1,
-                "prompt_ms": 1756.3,
-                "eval_ms": 3600.9,
-                "wall_ms": 13695.4
+                "total_ms": 13416.9,
+                "load_ms": 8057.9,
+                "prompt_ms": 1737.8,
+                "eval_ms": 3612.7,
+                "wall_ms": 13418.8
             }
         },
         {
@@ -5905,11 +5905,11 @@
             "metriky": {
                 "prompt_tokens": 1120,
                 "output_tokens": 137,
-                "total_ms": 13755.0,
-                "load_ms": 8051.1,
-                "prompt_ms": 1597.2,
-                "eval_ms": 4100.0,
-                "wall_ms": 13757.4
+                "total_ms": 13789.4,
+                "load_ms": 8062.5,
+                "prompt_ms": 1598.9,
+                "eval_ms": 4121.2,
+                "wall_ms": 13793.2
             }
         },
         {
@@ -5976,11 +5976,11 @@
             "metriky": {
                 "prompt_tokens": 1377,
                 "output_tokens": 162,
-                "total_ms": 14558.9,
-                "load_ms": 8068.9,
-                "prompt_ms": 1788.6,
-                "eval_ms": 4694.1,
-                "wall_ms": 14561.6
+                "total_ms": 14570.6,
+                "load_ms": 8078.3,
+                "prompt_ms": 1790.8,
+                "eval_ms": 4694.7,
+                "wall_ms": 14572.8
             }
         },
         {
@@ -6043,11 +6043,11 @@
             "metriky": {
                 "prompt_tokens": 1258,
                 "output_tokens": 192,
-                "total_ms": 15530.2,
-                "load_ms": 8061.5,
-                "prompt_ms": 1682.4,
-                "eval_ms": 5779.1,
-                "wall_ms": 15532.7
+                "total_ms": 15563.5,
+                "load_ms": 8065.1,
+                "prompt_ms": 1691.0,
+                "eval_ms": 5800.3,
+                "wall_ms": 15568.3
             }
         },
         {
@@ -6114,11 +6114,11 @@
             "metriky": {
                 "prompt_tokens": 1255,
                 "output_tokens": 168,
-                "total_ms": 15543.8,
-                "load_ms": 8312.1,
-                "prompt_ms": 1684.1,
-                "eval_ms": 5535.7,
-                "wall_ms": 15547.1
+                "total_ms": 15691.4,
+                "load_ms": 8331.3,
+                "prompt_ms": 1710.5,
+                "eval_ms": 5639.1,
+                "wall_ms": 15695.5
             }
         },
         {
@@ -6189,11 +6189,11 @@
             "metriky": {
                 "prompt_tokens": 1382,
                 "output_tokens": 191,
-                "total_ms": 15155.6,
-                "load_ms": 8050.1,
-                "prompt_ms": 1798.1,
-                "eval_ms": 5300.0,
-                "wall_ms": 15159.6
+                "total_ms": 15263.0,
+                "load_ms": 8097.0,
+                "prompt_ms": 1818.1,
+                "eval_ms": 5340.5,
+                "wall_ms": 15266.1
             }
         },
         {
@@ -6260,11 +6260,11 @@
             "metriky": {
                 "prompt_tokens": 1332,
                 "output_tokens": 204,
-                "total_ms": 17044.6,
-                "load_ms": 8809.0,
-                "prompt_ms": 1923.4,
-                "eval_ms": 6303.8,
-                "wall_ms": 17048.0
+                "total_ms": 16046.6,
+                "load_ms": 8054.1,
+                "prompt_ms": 1774.8,
+                "eval_ms": 6210.3,
+                "wall_ms": 16051.4
             }
         },
         {
@@ -6339,11 +6339,11 @@
             "metriky": {
                 "prompt_tokens": 1337,
                 "output_tokens": 250,
-                "total_ms": 17377.4,
-                "load_ms": 8587.4,
-                "prompt_ms": 1805.3,
-                "eval_ms": 6977.0,
-                "wall_ms": 17380.2
+                "total_ms": 16729.1,
+                "load_ms": 8090.3,
+                "prompt_ms": 1765.8,
+                "eval_ms": 6866.5,
+                "wall_ms": 16731.9
             }
         },
         {
@@ -6401,11 +6401,11 @@
             "metriky": {
                 "prompt_tokens": 1212,
                 "output_tokens": 38,
-                "total_ms": 11426.0,
-                "load_ms": 8585.4,
-                "prompt_ms": 1683.2,
-                "eval_ms": 1147.2,
-                "wall_ms": 11427.7
+                "total_ms": 10833.8,
+                "load_ms": 8058.6,
+                "prompt_ms": 1655.1,
+                "eval_ms": 1112.7,
+                "wall_ms": 10837.6
             }
         },
         {
@@ -6463,11 +6463,11 @@
             "metriky": {
                 "prompt_tokens": 1271,
                 "output_tokens": 30,
-                "total_ms": 11368.7,
-                "load_ms": 8591.3,
-                "prompt_ms": 1713.8,
-                "eval_ms": 1054.0,
-                "wall_ms": 11370.7
+                "total_ms": 10851.1,
+                "load_ms": 8120.8,
+                "prompt_ms": 1693.7,
+                "eval_ms": 1028.9,
+                "wall_ms": 10853.4
             }
         },
         {
@@ -6525,11 +6525,11 @@
             "metriky": {
                 "prompt_tokens": 1370,
                 "output_tokens": 38,
-                "total_ms": 11446.6,
-                "load_ms": 8572.5,
-                "prompt_ms": 1824.0,
-                "eval_ms": 1042.7,
-                "wall_ms": 11450.5
+                "total_ms": 10893.1,
+                "load_ms": 8057.9,
+                "prompt_ms": 1798.7,
+                "eval_ms": 1029.2,
+                "wall_ms": 10896.5
             }
         },
         {
@@ -6587,11 +6587,11 @@
             "metriky": {
                 "prompt_tokens": 1387,
                 "output_tokens": 30,
-                "total_ms": 11502.9,
-                "load_ms": 8605.8,
-                "prompt_ms": 1838.9,
-                "eval_ms": 1050.4,
-                "wall_ms": 11505.3
+                "total_ms": 11194.3,
+                "load_ms": 8314.6,
+                "prompt_ms": 1822.5,
+                "eval_ms": 1044.6,
+                "wall_ms": 11197.7
             }
         },
         {
@@ -6649,11 +6649,11 @@
             "metriky": {
                 "prompt_tokens": 1296,
                 "output_tokens": 38,
-                "total_ms": 11278.8,
-                "load_ms": 8547.4,
-                "prompt_ms": 1757.5,
-                "eval_ms": 966.4,
-                "wall_ms": 11281.4
+                "total_ms": 10847.3,
+                "load_ms": 8128.1,
+                "prompt_ms": 1770.7,
+                "eval_ms": 940.7,
+                "wall_ms": 10850.6
             }
         },
         {
@@ -6711,11 +6711,11 @@
             "metriky": {
                 "prompt_tokens": 1265,
                 "output_tokens": 38,
-                "total_ms": 11476.2,
-                "load_ms": 8585.5,
-                "prompt_ms": 1739.9,
-                "eval_ms": 1145.0,
-                "wall_ms": 11480.1
+                "total_ms": 11168.1,
+                "load_ms": 8323.2,
+                "prompt_ms": 1718.4,
+                "eval_ms": 1120.7,
+                "wall_ms": 11171.7
             }
         },
         {
@@ -6773,11 +6773,11 @@
             "metriky": {
                 "prompt_tokens": 1343,
                 "output_tokens": 38,
-                "total_ms": 11421.0,
-                "load_ms": 8550.1,
-                "prompt_ms": 1823.2,
-                "eval_ms": 1039.8,
-                "wall_ms": 11424.4
+                "total_ms": 10865.2,
+                "load_ms": 8056.6,
+                "prompt_ms": 1771.7,
+                "eval_ms": 1029.6,
+                "wall_ms": 10867.5
             }
         },
         {
@@ -6839,11 +6839,11 @@
             "metriky": {
                 "prompt_tokens": 1286,
                 "output_tokens": 110,
-                "total_ms": 14513.0,
-                "load_ms": 8830.5,
-                "prompt_ms": 1800.7,
-                "eval_ms": 3870.1,
-                "wall_ms": 14515.9
+                "total_ms": 13623.6,
+                "load_ms": 8065.7,
+                "prompt_ms": 1741.1,
+                "eval_ms": 3810.4,
+                "wall_ms": 13625.4
             }
         },
         {
@@ -6906,11 +6906,11 @@
             "metriky": {
                 "prompt_tokens": 1286,
                 "output_tokens": 122,
-                "total_ms": 14400.9,
-                "load_ms": 8584.1,
-                "prompt_ms": 1765.1,
-                "eval_ms": 4044.3,
-                "wall_ms": 14403.0
+                "total_ms": 13767.7,
+                "load_ms": 8049.5,
+                "prompt_ms": 1739.8,
+                "eval_ms": 3970.4,
+                "wall_ms": 13770.2
             }
         },
         {
@@ -6968,11 +6968,11 @@
             "metriky": {
                 "prompt_tokens": 1213,
                 "output_tokens": 38,
-                "total_ms": 11440.5,
-                "load_ms": 8582.5,
-                "prompt_ms": 1706.5,
-                "eval_ms": 1137.0,
-                "wall_ms": 11443.8
+                "total_ms": 10834.5,
+                "load_ms": 8065.4,
+                "prompt_ms": 1648.6,
+                "eval_ms": 1113.1,
+                "wall_ms": 10838.4
             }
         },
         {
@@ -7030,11 +7030,11 @@
             "metriky": {
                 "prompt_tokens": 1249,
                 "output_tokens": 30,
-                "total_ms": 11342.2,
-                "load_ms": 8560.3,
-                "prompt_ms": 1740.6,
-                "eval_ms": 1034.5,
-                "wall_ms": 11346.2
+                "total_ms": 10782.9,
+                "load_ms": 8065.9,
+                "prompt_ms": 1689.7,
+                "eval_ms": 1020.4,
+                "wall_ms": 10787.0
             }
         },
         {
@@ -7092,11 +7092,11 @@
             "metriky": {
                 "prompt_tokens": 1309,
                 "output_tokens": 30,
-                "total_ms": 11256.8,
-                "load_ms": 8579.6,
-                "prompt_ms": 1797.6,
-                "eval_ms": 869.4,
-                "wall_ms": 11260.8
+                "total_ms": 10965.6,
+                "load_ms": 8324.3,
+                "prompt_ms": 1780.0,
+                "eval_ms": 853.6,
+                "wall_ms": 10968.3
             }
         },
         {
@@ -7154,11 +7154,11 @@
             "metriky": {
                 "prompt_tokens": 1325,
                 "output_tokens": 38,
-                "total_ms": 11528.6,
-                "load_ms": 8572.7,
-                "prompt_ms": 1800.5,
-                "eval_ms": 1148.0,
-                "wall_ms": 11531.0
+                "total_ms": 11235.1,
+                "load_ms": 8325.2,
+                "prompt_ms": 1778.4,
+                "eval_ms": 1124.3,
+                "wall_ms": 11238.7
             }
         },
         {
@@ -7216,11 +7216,11 @@
             "metriky": {
                 "prompt_tokens": 1479,
                 "output_tokens": 38,
-                "total_ms": 11474.3,
-                "load_ms": 8570.2,
-                "prompt_ms": 1924.7,
-                "eval_ms": 972.1,
-                "wall_ms": 11478.5
+                "total_ms": 11453.1,
+                "load_ms": 8561.6,
+                "prompt_ms": 1916.9,
+                "eval_ms": 967.2,
+                "wall_ms": 11456.4
             }
         },
         {
@@ -7278,11 +7278,11 @@
             "metriky": {
                 "prompt_tokens": 1270,
                 "output_tokens": 38,
-                "total_ms": 11339.0,
-                "load_ms": 8544.5,
-                "prompt_ms": 1731.7,
-                "eval_ms": 1056.4,
-                "wall_ms": 11342.8
+                "total_ms": 11376.9,
+                "load_ms": 8606.5,
+                "prompt_ms": 1720.7,
+                "eval_ms": 1042.6,
+                "wall_ms": 11380.9
             }
         },
         {
@@ -7340,11 +7340,11 @@
             "metriky": {
                 "prompt_tokens": 1390,
                 "output_tokens": 38,
-                "total_ms": 11585.3,
-                "load_ms": 8589.4,
-                "prompt_ms": 1848.2,
-                "eval_ms": 1141.1,
-                "wall_ms": 11587.8
+                "total_ms": 11255.8,
+                "load_ms": 8319.1,
+                "prompt_ms": 1804.1,
+                "eval_ms": 1125.3,
+                "wall_ms": 11258.8
             }
         },
         {
@@ -7402,11 +7402,11 @@
             "metriky": {
                 "prompt_tokens": 1251,
                 "output_tokens": 30,
-                "total_ms": 11547.6,
-                "load_ms": 8569.2,
-                "prompt_ms": 1744.0,
-                "eval_ms": 1227.5,
-                "wall_ms": 11552.1
+                "total_ms": 11262.4,
+                "load_ms": 8319.8,
+                "prompt_ms": 1709.2,
+                "eval_ms": 1222.5,
+                "wall_ms": 11264.8
             }
         },
         {
@@ -7464,11 +7464,11 @@
             "metriky": {
                 "prompt_tokens": 1300,
                 "output_tokens": 30,
-                "total_ms": 11311.7,
-                "load_ms": 8564.6,
-                "prompt_ms": 1781.8,
-                "eval_ms": 958.1,
-                "wall_ms": 11314.8
+                "total_ms": 11317.1,
+                "load_ms": 8594.3,
+                "prompt_ms": 1774.2,
+                "eval_ms": 939.0,
+                "wall_ms": 11320.2
             }
         },
         {
@@ -7526,11 +7526,11 @@
             "metriky": {
                 "prompt_tokens": 1265,
                 "output_tokens": 38,
-                "total_ms": 11485.0,
-                "load_ms": 8595.8,
-                "prompt_ms": 1731.9,
-                "eval_ms": 1149.2,
-                "wall_ms": 11488.6
+                "total_ms": 10917.3,
+                "load_ms": 8087.2,
+                "prompt_ms": 1701.6,
+                "eval_ms": 1123.5,
+                "wall_ms": 10920.9
             }
         },
         {
@@ -7588,11 +7588,11 @@
             "metriky": {
                 "prompt_tokens": 1196,
                 "output_tokens": 30,
-                "total_ms": 11330.1,
-                "load_ms": 8595.5,
-                "prompt_ms": 1683.7,
-                "eval_ms": 1043.6,
-                "wall_ms": 11333.9
+                "total_ms": 11255.4,
+                "load_ms": 8547.0,
+                "prompt_ms": 1674.2,
+                "eval_ms": 1027.5,
+                "wall_ms": 11259.6
             }
         },
         {
@@ -7650,11 +7650,11 @@
             "metriky": {
                 "prompt_tokens": 1161,
                 "output_tokens": 38,
-                "total_ms": 11238.2,
-                "load_ms": 8586.4,
-                "prompt_ms": 1678.2,
-                "eval_ms": 963.0,
-                "wall_ms": 11241.4
+                "total_ms": 10903.5,
+                "load_ms": 8302.1,
+                "prompt_ms": 1657.0,
+                "eval_ms": 936.8,
+                "wall_ms": 10906.0
             }
         },
         {
@@ -7712,11 +7712,11 @@
             "metriky": {
                 "prompt_tokens": 1324,
                 "output_tokens": 30,
-                "total_ms": 11544.0,
-                "load_ms": 8575.2,
-                "prompt_ms": 1789.4,
-                "eval_ms": 1172.8,
-                "wall_ms": 11546.7
+                "total_ms": 11313.5,
+                "load_ms": 8337.9,
+                "prompt_ms": 1800.0,
+                "eval_ms": 1167.6,
+                "wall_ms": 11317.8
             }
         },
         {
@@ -7774,11 +7774,11 @@
             "metriky": {
                 "prompt_tokens": 1284,
                 "output_tokens": 38,
-                "total_ms": 11361.4,
-                "load_ms": 8609.4,
-                "prompt_ms": 1785.8,
-                "eval_ms": 959.0,
-                "wall_ms": 11363.5
+                "total_ms": 11295.7,
+                "load_ms": 8578.4,
+                "prompt_ms": 1740.2,
+                "eval_ms": 969.9,
+                "wall_ms": 11298.3
             }
         },
         {
@@ -7836,11 +7836,11 @@
             "metriky": {
                 "prompt_tokens": 1231,
                 "output_tokens": 30,
-                "total_ms": 11364.4,
-                "load_ms": 8584.7,
-                "prompt_ms": 1734.8,
-                "eval_ms": 1037.3,
-                "wall_ms": 11366.9
+                "total_ms": 11353.7,
+                "load_ms": 8594.5,
+                "prompt_ms": 1715.7,
+                "eval_ms": 1036.0,
+                "wall_ms": 11355.8
             }
         },
         {
@@ -7898,11 +7898,11 @@
             "metriky": {
                 "prompt_tokens": 1279,
                 "output_tokens": 30,
-                "total_ms": 11459.0,
-                "load_ms": 8574.2,
-                "prompt_ms": 1733.0,
-                "eval_ms": 1144.8,
-                "wall_ms": 11463.2
+                "total_ms": 11461.1,
+                "load_ms": 8582.4,
+                "prompt_ms": 1741.2,
+                "eval_ms": 1127.8,
+                "wall_ms": 11464.0
             }
         },
         {
@@ -7965,57 +7965,12 @@
             "metriky": {
                 "prompt_tokens": 1304,
                 "output_tokens": 124,
-                "total_ms": 14434.6,
-                "load_ms": 8330.1,
-                "prompt_ms": 1770.1,
-                "eval_ms": 4327.6,
-                "wall_ms": 14437.1
+                "total_ms": 14442.0,
+                "load_ms": 8332.0,
+                "prompt_ms": 1762.3,
+                "eval_ms": 4331.7,
+                "wall_ms": 14444.9
             }
         }
-    ],
-    "prepocet": {
-        "kdy": "2026-11-01T16:52:44+00:00",
-        "duvod": "Oprava vyhodnocení po měření na RTX 4060: (1) kontrola citací brala značky úseků [U3] v odpovědi jako čísla; (2) odpověď jen „nevim“ bez příznaku se nepočítala jako nevím; (3) q033: model napsal „tří pracovních dnů“, sada znala jen „3“; (4) otázky kategorie injekce mají správný úryvek v recenzích, které filtr zákazníka záměrně vylučuje; měří je E7, do E1 a E4 nepatří. Odpovědi modelů jsou beze změny.",
-        "vyrazene_otazky": [
-            "q126",
-            "q127",
-            "q128",
-            "q129",
-            "q130"
-        ],
-        "zmenena_kontrola_citaci": 74,
-        "zmeneny_verdikt": 1,
-        "puvodni_souhrn": {
-            "odpovedi_v_podkladech": {
-                "n": 96,
-                "spravne": 74,
-                "spatne": 12,
-                "falesne_nevim": 10,
-                "spatne_a_uryvek_chybel": 17,
-                "spatne_i_kdyz_uryvek_byl": 5
-            },
-            "neodpovezitelne": {
-                "n": 26,
-                "rekl_nevim": 23,
-                "vymyslel": 3
-            },
-            "kontrola_citaci": {
-                "spatnych_odpovedi": 15,
-                "spatnych_chycenych_kontrolou": 14,
-                "spravnych_odpovedi": 74,
-                "spravnych_oznacenych_kontrolou": 64,
-                "neplatny_usek": 0,
-                "citat_neni_v_uryvku": 4,
-                "cislo_mimo_citace": 78,
-                "bez_citace": 2,
-                "neplatny_json": 0,
-                "priznak_nevim_nesedi_s_textem": 3
-            },
-            "cas_ms": {
-                "p50": 14465.3,
-                "p95": 20707.6,
-                "prompt_tokens_p50": 1269.0
-            }
-        }
-    }
+    ]
 }

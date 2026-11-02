@@ -1,5 +1,5 @@
 {
-    "zmereno": "2026-11-01T16:40:25+00:00",
+    "zmereno": "2026-11-02T17:18:28+00:00",
     "popis": "E6: přeindexování změněného dokumentu se Symfony AI Store 1.0.0-BETA1 (TextSplitTransformer 1000/200 + Postgres store, kosinus, 1024 dim).",
     "verze": {
         "symfony/ai-store": "v1.0.0-BETA1",
@@ -28,7 +28,7 @@
     "dotaz": "Za jak dlouho odešlete pákový kávovar?",
     "retriever_vychozi_hybrid": [
         {
-            "id": "dcbad11e-33bd-4d1f-8ebe-ce8a98ff44c8",
+            "id": "0e83a8f3-5e40-4ffe-87c8-ab5a423bd9e4",
             "skore": 0.351,
             "obsahuje": [
                 "PPL 139 Kč (nová)"
@@ -36,7 +36,7 @@
             "text": "vních dnů od potvrzení objednávky. Před odesláním ho v dílně vyzkoušíme a propláchneme, takže v něm můžete najít pár kapek vody. Nejde o použitý kus, zkouška je součástí naší výstupní kontroly.\n\nPřekapávače máme skladem a odesíláme je stejně jako ostatní zboží, tedy v pracovní den do 11:00 ještě týž den. Pokud objednávka obsahuje kávovar i další zboží, pošleme všechno najednou, jakmile je kávovar připravený.\n\n## Způsoby dopravy a ceny\n\nVýdejní místo Zásilkovny stojí 69 Kč, od 2 000 Kč je zdarma. Kurýr PPL na adresu stojí 139 Kč. Kávovary těžší než 10 kg posíláme jen kurýrem PPL za 249 Kč. Po odeslání trvá doručení obvykle 1 až 2 pracovní dny.\n\nDoprava zdarma se týká jen výdejních míst Zásilkovny. Hranici 2 000 Kč počítáme z ceny zboží po uplatnění slev, bez ceny dopravy a dobírky. Výdejní místa Zásilkovny nejsou stavěná na velké a těžké balíky, a proto u kávovarů nad 10 kg nenabízíme jinou možnost než kurýra.\n\n## Které kávovary váží přes 10 kg\n\nHmotnost uvádíme v parametrech každého ká"
         },
         {
-            "id": "3243bcc6-cac9-4230-afb1-2d4ea7c4b726",
+            "id": "de1c3ed7-878b-43d3-b351-d589471b5d38",
             "skore": 0.3507,
             "obsahuje": [
                 "PPL 129 Kč (stará)"
@@ -44,7 +44,7 @@
             "text": "vních dnů od potvrzení objednávky. Před odesláním ho v dílně vyzkoušíme a propláchneme, takže v něm můžete najít pár kapek vody. Nejde o použitý kus, zkouška je součástí naší výstupní kontroly.\n\nPřekapávače máme skladem a odesíláme je stejně jako ostatní zboží, tedy v pracovní den do 11:00 ještě týž den. Pokud objednávka obsahuje kávovar i další zboží, pošleme všechno najednou, jakmile je kávovar připravený.\n\n## Způsoby dopravy a ceny\n\nVýdejní místo Zásilkovny stojí 69 Kč, od 2 000 Kč je zdarma. Kurýr PPL na adresu stojí 129 Kč. Kávovary těžší než 10 kg posíláme jen kurýrem PPL za 249 Kč. Po odeslání trvá doručení obvykle 1 až 2 pracovní dny.\n\nDoprava zdarma se týká jen výdejních míst Zásilkovny. Hranici 2 000 Kč počítáme z ceny zboží po uplatnění slev, bez ceny dopravy a dobírky. Výdejní místa Zásilkovny nejsou stavěná na velké a těžké balíky, a proto u kávovarů nad 10 kg nenabízíme jinou možnost než kurýra.\n\n## Které kávovary váží přes 10 kg\n\nHmotnost uvádíme v parametrech každého ká"
         },
         {
-            "id": "4aeb9b51-39d3-46fc-a065-84c4b4f529bd",
+            "id": "6fadb048-8392-48c4-9f60-f8a1cd44701c",
             "skore": 0.3373,
             "obsahuje": [
                 "kávovary 5 dnů (stará)"
@@ -52,7 +52,7 @@
             "text": "# Doprava a dodací lhůty\n\nFiktivní e-shop Mlýnek (mlynek.test), vymyšlený pro ukázku k videu. Neexistuje.\n\n## Kdy objednávku odešleme\n\nZboží skladem, které objednáte v pracovní den do 11:00, odešleme ještě týž den. Objednávky přijaté po 11:00, o víkendu nebo ve státní svátek odesíláme následující pracovní den. U platby převodem počítáme lhůtu až od chvíle, kdy peníze dorazí na náš účet; u dobírky od potvrzení objednávky. O odeslání vás informujeme e-mailem, ve kterém najdete i číslo zásilky a odkaz na její sledování.\n\nPřed Vánocemi a během velkých akcí může odeslání výjimečně trvat o den déle; na webu na to vždy předem upozorníme.\n\n## Kávovary\n\nPákové a automatické kávovary neskladujeme, posílá nám je dodavatel. Kávovar proto odesíláme do 5 pracovních dnů od zaplacení, u dobírky do 5 pracovních dnů od potvrzení objednávky. Před odesláním ho v dílně vyzkoušíme a propláchneme, takže v něm můžete najít pár kapek vody. Nejde o použitý kus, zkouška je součástí naší výstupní kontroly.\n\nPřeka"
         },
         {
-            "id": "99d2d944-1a61-4e59-a5ca-14059a50d251",
+            "id": "59434f92-96df-42e1-b85e-9b24d828a1e5",
             "skore": 0.3372,
             "obsahuje": [
                 "kávovary 7 dnů (nová)"
@@ -60,7 +60,7 @@
             "text": "# Doprava a dodací lhůty\n\nFiktivní e-shop Mlýnek (mlynek.test), vymyšlený pro ukázku k videu. Neexistuje.\n\n## Kdy objednávku odešleme\n\nZboží skladem, které objednáte v pracovní den do 11:00, odešleme ještě týž den. Objednávky přijaté po 11:00, o víkendu nebo ve státní svátek odesíláme následující pracovní den. U platby převodem počítáme lhůtu až od chvíle, kdy peníze dorazí na náš účet; u dobírky od potvrzení objednávky. O odeslání vás informujeme e-mailem, ve kterém najdete i číslo zásilky a odkaz na její sledování.\n\nPřed Vánocemi a během velkých akcí může odeslání výjimečně trvat o den déle; na webu na to vždy předem upozorníme.\n\n## Kávovary\n\nPákové a automatické kávovary neskladujeme, posílá nám je dodavatel. Kávovar proto odesíláme do 7 pracovních dnů od zaplacení, u dobírky do 7 pracovních dnů od potvrzení objednávky. Před odesláním ho v dílně vyzkoušíme a propláchneme, takže v něm můžete najít pár kapek vody. Nejde o použitý kus, zkouška je součástí naší výstupní kontroly.\n\nPřeka"
         },
         {
-            "id": "11b68bb5-1680-4631-835b-92a4722bfce0",
+            "id": "c276fb60-1c23-478e-b1a8-14c9f2e38672",
             "skore": 0.3181,
             "obsahuje": [],
             "text": "vních dnů od odeslání nepohne, napište nám s číslem objednávky a u dopravce to prověříme.\n\n## Poškozený balík\n\nPři převzetí si balík prohlédněte. Je-li obal zjevně poškozený, například promáčknutý nebo roztržený, sepište s kurýrem nebo na výdejním místě záznam o poškození, případně zásilku vůbec nepřebírejte. Poškození, které nebylo vidět zvenku, nám nahlaste do 3 pracovních dnů od doručení a přiložte fotografie obalu i obsahu. Kávovary balíme do dvojité krabice s výplní, aby cestu vydržely.\n\nPokud jste zásilku kvůli poškození nepřevzali, vrátí se nám. Jakmile ji dopravce doručí zpět, pošleme vám nové zboží, nebo vrátíme peníze, podle toho, co si vyberete. Takové případy řešíme přednostně.\n\n## Nevyzvednutá zásilka\n\nKdyž si zásilku nevyzvednete a vrátí se nám, zrušíme objednávku a peníze za zboží vám vrátíme. Odečteme z nich náklady na dopravu tam i zpět, které nám dopravce účtoval. Pokud chcete zboží přesto dostat, napište nám a pošleme ho znovu po zaplacení nového poštovného.\n\nZákazní"
@@ -68,7 +68,7 @@
     ],
     "vektorovy_dotaz_skore_je_vzdalenost": [
         {
-            "id": "dcbad11e-33bd-4d1f-8ebe-ce8a98ff44c8",
+            "id": "0e83a8f3-5e40-4ffe-87c8-ab5a423bd9e4",
             "skore": 0.3208,
             "obsahuje": [
                 "PPL 139 Kč (nová)"
@@ -76,7 +76,7 @@
             "text": "vních dnů od potvrzení objednávky. Před odesláním ho v dílně vyzkoušíme a propláchneme, takže v něm můžete najít pár kapek vody. Nejde o použitý kus, zkouška je součástí naší výstupní kontroly.\n\nPřekapávače máme skladem a odesíláme je stejně jako ostatní zboží, tedy v pracovní den do 11:00 ještě týž den. Pokud objednávka obsahuje kávovar i další zboží, pošleme všechno najednou, jakmile je kávovar připravený.\n\n## Způsoby dopravy a ceny\n\nVýdejní místo Zásilkovny stojí 69 Kč, od 2 000 Kč je zdarma. Kurýr PPL na adresu stojí 139 Kč. Kávovary těžší než 10 kg posíláme jen kurýrem PPL za 249 Kč. Po odeslání trvá doručení obvykle 1 až 2 pracovní dny.\n\nDoprava zdarma se týká jen výdejních míst Zásilkovny. Hranici 2 000 Kč počítáme z ceny zboží po uplatnění slev, bez ceny dopravy a dobírky. Výdejní místa Zásilkovny nejsou stavěná na velké a těžké balíky, a proto u kávovarů nad 10 kg nenabízíme jinou možnost než kurýra.\n\n## Které kávovary váží přes 10 kg\n\nHmotnost uvádíme v parametrech každého ká"
         },
         {
-            "id": "3243bcc6-cac9-4230-afb1-2d4ea7c4b726",
+            "id": "de1c3ed7-878b-43d3-b351-d589471b5d38",
             "skore": 0.3214,
             "obsahuje": [
                 "PPL 129 Kč (stará)"
@@ -84,7 +84,7 @@
             "text": "vních dnů od potvrzení objednávky. Před odesláním ho v dílně vyzkoušíme a propláchneme, takže v něm můžete najít pár kapek vody. Nejde o použitý kus, zkouška je součástí naší výstupní kontroly.\n\nPřekapávače máme skladem a odesíláme je stejně jako ostatní zboží, tedy v pracovní den do 11:00 ještě týž den. Pokud objednávka obsahuje kávovar i další zboží, pošleme všechno najednou, jakmile je kávovar připravený.\n\n## Způsoby dopravy a ceny\n\nVýdejní místo Zásilkovny stojí 69 Kč, od 2 000 Kč je zdarma. Kurýr PPL na adresu stojí 129 Kč. Kávovary těžší než 10 kg posíláme jen kurýrem PPL za 249 Kč. Po odeslání trvá doručení obvykle 1 až 2 pracovní dny.\n\nDoprava zdarma se týká jen výdejních míst Zásilkovny. Hranici 2 000 Kč počítáme z ceny zboží po uplatnění slev, bez ceny dopravy a dobírky. Výdejní místa Zásilkovny nejsou stavěná na velké a těžké balíky, a proto u kávovarů nad 10 kg nenabízíme jinou možnost než kurýra.\n\n## Které kávovary váží přes 10 kg\n\nHmotnost uvádíme v parametrech každého ká"
         },
         {
-            "id": "4aeb9b51-39d3-46fc-a065-84c4b4f529bd",
+            "id": "6fadb048-8392-48c4-9f60-f8a1cd44701c",
             "skore": 0.3354,
             "obsahuje": [
                 "kávovary 5 dnů (stará)"
@@ -92,7 +92,7 @@
             "text": "# Doprava a dodací lhůty\n\nFiktivní e-shop Mlýnek (mlynek.test), vymyšlený pro ukázku k videu. Neexistuje.\n\n## Kdy objednávku odešleme\n\nZboží skladem, které objednáte v pracovní den do 11:00, odešleme ještě týž den. Objednávky přijaté po 11:00, o víkendu nebo ve státní svátek odesíláme následující pracovní den. U platby převodem počítáme lhůtu až od chvíle, kdy peníze dorazí na náš účet; u dobírky od potvrzení objednávky. O odeslání vás informujeme e-mailem, ve kterém najdete i číslo zásilky a odkaz na její sledování.\n\nPřed Vánocemi a během velkých akcí může odeslání výjimečně trvat o den déle; na webu na to vždy předem upozorníme.\n\n## Kávovary\n\nPákové a automatické kávovary neskladujeme, posílá nám je dodavatel. Kávovar proto odesíláme do 5 pracovních dnů od zaplacení, u dobírky do 5 pracovních dnů od potvrzení objednávky. Před odesláním ho v dílně vyzkoušíme a propláchneme, takže v něm můžete najít pár kapek vody. Nejde o použitý kus, zkouška je součástí naší výstupní kontroly.\n\nPřeka"
         },
         {
-            "id": "99d2d944-1a61-4e59-a5ca-14059a50d251",
+            "id": "59434f92-96df-42e1-b85e-9b24d828a1e5",
             "skore": 0.3357,
             "obsahuje": [
                 "kávovary 7 dnů (nová)"
@@ -100,7 +100,7 @@
             "text": "# Doprava a dodací lhůty\n\nFiktivní e-shop Mlýnek (mlynek.test), vymyšlený pro ukázku k videu. Neexistuje.\n\n## Kdy objednávku odešleme\n\nZboží skladem, které objednáte v pracovní den do 11:00, odešleme ještě týž den. Objednávky přijaté po 11:00, o víkendu nebo ve státní svátek odesíláme následující pracovní den. U platby převodem počítáme lhůtu až od chvíle, kdy peníze dorazí na náš účet; u dobírky od potvrzení objednávky. O odeslání vás informujeme e-mailem, ve kterém najdete i číslo zásilky a odkaz na její sledování.\n\nPřed Vánocemi a během velkých akcí může odeslání výjimečně trvat o den déle; na webu na to vždy předem upozorníme.\n\n## Kávovary\n\nPákové a automatické kávovary neskladujeme, posílá nám je dodavatel. Kávovar proto odesíláme do 7 pracovních dnů od zaplacení, u dobírky do 7 pracovních dnů od potvrzení objednávky. Před odesláním ho v dílně vyzkoušíme a propláchneme, takže v něm můžete najít pár kapek vody. Nejde o použitý kus, zkouška je součástí naší výstupní kontroly.\n\nPřeka"
         },
         {
-            "id": "11b68bb5-1680-4631-835b-92a4722bfce0",
+            "id": "c276fb60-1c23-478e-b1a8-14c9f2e38672",
             "skore": 0.3739,
             "obsahuje": [],
             "text": "vních dnů od odeslání nepohne, napište nám s číslem objednávky a u dopravce to prověříme.\n\n## Poškozený balík\n\nPři převzetí si balík prohlédněte. Je-li obal zjevně poškozený, například promáčknutý nebo roztržený, sepište s kurýrem nebo na výdejním místě záznam o poškození, případně zásilku vůbec nepřebírejte. Poškození, které nebylo vidět zvenku, nám nahlaste do 3 pracovních dnů od doručení a přiložte fotografie obalu i obsahu. Kávovary balíme do dvojité krabice s výplní, aby cestu vydržely.\n\nPokud jste zásilku kvůli poškození nepřevzali, vrátí se nám. Jakmile ji dopravce doručí zpět, pošleme vám nové zboží, nebo vrátíme peníze, podle toho, co si vyberete. Takové případy řešíme přednostně.\n\n## Nevyzvednutá zásilka\n\nKdyž si zásilku nevyzvednete a vrátí se nám, zrušíme objednávku a peníze za zboží vám vrátíme. Odečteme z nich náklady na dopravu tam i zpět, které nám dopravce účtoval. Pokud chcete zboží přesto dostat, napište nám a pošleme ho znovu po zaplacení nového poštovného.\n\nZákazní"

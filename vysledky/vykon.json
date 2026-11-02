@@ -1,5 +1,5 @@
 {
-    "zmereno": "2026-11-01T16:43:43+00:00",
+    "zmereno": "2026-11-02T17:21:46+00:00",
     "popis": "E8: přesné hledání vs. HNSW, HNSW s filtrem, výměna modelů v paměti.",
     "pgvector": {
         "10000": {
@@ -7,80 +7,132 @@
             "velikost_tabulky": "132 MB",
             "presne_bez_indexu_ms": {
                 "n": 50,
-                "p50": 16.96,
-                "p95": 18.24
+                "p50": 17.13,
+                "p95": 19.03
             },
             "hnsw_stavba_s": 1.7,
             "hnsw_ms": {
                 "n": 50,
-                "p50": 0.31,
-                "p95": 0.42
+                "p50": 0.44,
+                "p95": 0.61
             },
-            "hnsw_recall_at_10": 0.872,
+            "hnsw_recall_at_10": 0.912,
+            "hnsw_podle_ef_search": {
+                "40": {
+                    "ms": {
+                        "n": 50,
+                        "p50": 0.44,
+                        "p95": 0.61
+                    },
+                    "recall_at_10": 0.912
+                },
+                "100": {
+                    "ms": {
+                        "n": 50,
+                        "p50": 0.49,
+                        "p95": 0.69
+                    },
+                    "recall_at_10": 0.968
+                },
+                "200": {
+                    "ms": {
+                        "n": 50,
+                        "p50": 0.7,
+                        "p95": 0.85
+                    },
+                    "recall_at_10": 0.986
+                }
+            },
             "filtr_10_procent": {
                 "presne_ms": {
                     "n": 50,
-                    "p50": 1.68,
-                    "p95": 2.13
+                    "p50": 1.8,
+                    "p95": 2.15
                 },
                 "hnsw_bez_iterative_scan": {
                     "ms": {
                         "n": 50,
-                        "p50": 0.32,
-                        "p95": 0.4
+                        "p50": 0.29,
+                        "p95": 0.43
                     },
-                    "prumer_vracenych_radku": 3.74,
-                    "recall_at_10": 0.334
+                    "prumer_vracenych_radku": 3.86,
+                    "recall_at_10": 0.372
                 },
                 "hnsw_iterative_scan_relaxed": {
                     "ms": {
                         "n": 50,
-                        "p50": 0.58,
-                        "p95": 0.89
+                        "p50": 0.5,
+                        "p95": 0.72
                     },
                     "prumer_vracenych_radku": 10.0,
-                    "recall_at_10": 0.886
+                    "recall_at_10": 0.946
                 }
             }
         },
         "100000": {
-            "generovani_s": 10.6,
+            "generovani_s": 10.4,
             "velikost_tabulky": "1317 MB",
             "presne_bez_indexu_ms": {
                 "n": 50,
-                "p50": 258.61,
-                "p95": 271.77
+                "p50": 261.04,
+                "p95": 280.55
             },
-            "hnsw_stavba_s": 136.1,
+            "hnsw_stavba_s": 135.2,
             "hnsw_ms": {
                 "n": 50,
-                "p50": 1.77,
-                "p95": 2.23
+                "p50": 1.88,
+                "p95": 3.31
             },
-            "hnsw_recall_at_10": 0.676,
+            "hnsw_recall_at_10": 0.74,
+            "hnsw_podle_ef_search": {
+                "40": {
+                    "ms": {
+                        "n": 50,
+                        "p50": 1.88,
+                        "p95": 3.31
+                    },
+                    "recall_at_10": 0.74
+                },
+                "100": {
+                    "ms": {
+                        "n": 50,
+                        "p50": 1.26,
+                        "p95": 2.1
+                    },
+                    "recall_at_10": 0.776
+                },
+                "200": {
+                    "ms": {
+                        "n": 50,
+                        "p50": 1.44,
+                        "p95": 2.68
+                    },
+                    "recall_at_10": 0.83
+                }
+            },
             "filtr_10_procent": {
                 "presne_ms": {
                     "n": 50,
-                    "p50": 23.06,
-                    "p95": 24.61
+                    "p50": 24.03,
+                    "p95": 26.24
                 },
                 "hnsw_bez_iterative_scan": {
                     "ms": {
                         "n": 50,
-                        "p50": 1.08,
-                        "p95": 1.61
+                        "p50": 1.18,
+                        "p95": 1.92
                     },
-                    "prumer_vracenych_radku": 3.32,
-                    "recall_at_10": 0.242
+                    "prumer_vracenych_radku": 3.88,
+                    "recall_at_10": 0.328
                 },
                 "hnsw_iterative_scan_relaxed": {
                     "ms": {
                         "n": 50,
-                        "p50": 1.3,
-                        "p95": 2.07
+                        "p50": 1.39,
+                        "p95": 2.12
                     },
                     "prumer_vracenych_radku": 10.0,
-                    "recall_at_10": 0.72
+                    "recall_at_10": 0.756
                 }
             }
         }
@@ -90,8 +142,8 @@
         "gemma4:e2b": [
             {
                 "krok": "embed",
-                "load_ms": 3.8,
-                "wall_ms": 114.9,
+                "load_ms": 5.4,
+                "wall_ms": 99.6,
                 "v_pameti": [
                     {
                         "model": "bge-m3:latest",
@@ -102,8 +154,8 @@
             },
             {
                 "krok": "chat",
-                "load_ms": 3898.9,
-                "wall_ms": 4114.5,
+                "load_ms": 3893.7,
+                "wall_ms": 4114.7,
                 "v_pameti": [
                     {
                         "model": "gemma4:e2b",
@@ -119,8 +171,8 @@
             },
             {
                 "krok": "embed",
-                "load_ms": 4.7,
-                "wall_ms": 14.3,
+                "load_ms": 7.7,
+                "wall_ms": 16.9,
                 "v_pameti": [
                     {
                         "model": "gemma4:e2b",
@@ -136,8 +188,8 @@
             },
             {
                 "krok": "chat",
-                "load_ms": 6.8,
-                "wall_ms": 121.3,
+                "load_ms": 6.4,
+                "wall_ms": 113.1,
                 "v_pameti": [
                     {
                         "model": "gemma4:e2b",
@@ -153,8 +205,8 @@
             },
             {
                 "krok": "embed",
-                "load_ms": 4.2,
-                "wall_ms": 12.2,
+                "load_ms": 5.4,
+                "wall_ms": 13.4,
                 "v_pameti": [
                     {
                         "model": "gemma4:e2b",
@@ -172,8 +224,8 @@
         "gemma4:12b": [
             {
                 "krok": "embed",
-                "load_ms": 7.3,
-                "wall_ms": 15.2,
+                "load_ms": 4.7,
+                "wall_ms": 13.7,
                 "v_pameti": [
                     {
                         "model": "gemma4:e2b",
@@ -189,8 +241,8 @@
             },
             {
                 "krok": "chat",
-                "load_ms": 8528.4,
-                "wall_ms": 9060.1,
+                "load_ms": 8303.3,
+                "wall_ms": 8862.0,
                 "v_pameti": [
                     {
                         "model": "gemma4:12b",
@@ -201,8 +253,8 @@
             },
             {
                 "krok": "embed",
-                "load_ms": 2747.7,
-                "wall_ms": 2785.6,
+                "load_ms": 2930.1,
+                "wall_ms": 2968.5,
                 "v_pameti": [
                     {
                         "model": "bge-m3:latest",
@@ -213,8 +265,8 @@
             },
             {
                 "krok": "chat",
-                "load_ms": 8555.6,
-                "wall_ms": 9120.5,
+                "load_ms": 8563.2,
+                "wall_ms": 9117.5,
                 "v_pameti": [
                     {
                         "model": "gemma4:12b",
@@ -225,8 +277,8 @@
             },
             {
                 "krok": "embed",
-                "load_ms": 2686.6,
-                "wall_ms": 2718.4,
+                "load_ms": 2708.1,
+                "wall_ms": 2738.7,
                 "v_pameti": [
                     {
                         "model": "bge-m3:latest",

@@ -1,12 +1,12 @@
 {
-    "zmereno": "2026-11-01T15:49:32+00:00",
+    "zmereno": "2026-11-01T17:47:20+00:00",
     "popis": "E1–E3: varianty hledání; každá odpověditelná otázka s diakritikou i bez; filtr = zákazník (veřejné podklady e-shopu a dodavatelů).",
     "embed_model": "bge-m3",
     "otazek": 91,
     "embedding_dotazu_ms": {
-        "n": 192,
-        "p50": 14.95,
-        "p95": 54.77
+        "n": 182,
+        "p50": 17.31,
+        "p95": 26.7
     },
     "varianty": {
         "vektor": {
@@ -174,8 +174,8 @@
                 }
             },
             "latence_ms": {
-                "n": 192,
-                "p50": 1.55,
+                "n": 182,
+                "p50": 1.58,
                 "p95": 1.79
             }
         },
@@ -344,9 +344,9 @@
                 }
             },
             "latence_ms": {
-                "n": 192,
-                "p50": 1.24,
-                "p95": 1.5
+                "n": 182,
+                "p50": 1.25,
+                "p95": 1.48
             }
         },
         "fulltext": {
@@ -514,9 +514,9 @@
                 }
             },
             "latence_ms": {
-                "n": 192,
-                "p50": 0.79,
-                "p95": 0.98
+                "n": 182,
+                "p50": 0.78,
+                "p95": 0.99
             }
         },
         "fulltext_tvary": {
@@ -684,9 +684,9 @@
                 }
             },
             "latence_ms": {
-                "n": 192,
-                "p50": 0.58,
-                "p95": 0.87
+                "n": 182,
+                "p50": 0.56,
+                "p95": 0.78
             }
         },
         "hybrid": {
@@ -854,9 +854,9 @@
                 }
             },
             "latence_ms": {
-                "n": 192,
-                "p50": 1.31,
-                "p95": 1.6
+                "n": 182,
+                "p50": 1.3,
+                "p95": 1.53
             }
         },
         "hybrid_simple": {
@@ -1024,9 +1024,9 @@
                 }
             },
             "latence_ms": {
-                "n": 192,
-                "p50": 1.35,
-                "p95": 1.71
+                "n": 182,
+                "p50": 1.33,
+                "p95": 1.56
             }
         },
         "hybrid_rerank": {
@@ -1194,9 +1194,9 @@
                 }
             },
             "latence_ms": {
-                "n": 192,
-                "p50": 245.29,
-                "p95": 272.76
+                "n": 182,
+                "p50": 238.08,
+                "p95": 265.88
             }
         }
     },
@@ -22269,179 +22269,5 @@
                 }
             }
         }
-    ],
-    "prepocet": {
-        "kdy": "2026-11-01T16:52:36+00:00",
-        "duvod": "Oprava vyhodnocení po měření na RTX 4060: (1) kontrola citací brala značky úseků [U3] v odpovědi jako čísla; (2) odpověď jen „nevim“ bez příznaku se nepočítala jako nevím; (3) q033: model napsal „tří pracovních dnů“, sada znala jen „3“; (4) otázky kategorie injekce mají správný úryvek v recenzích, které filtr zákazníka záměrně vylučuje; měří je E7, do E1 a E4 nepatří. Odpovědi modelů jsou beze změny.",
-        "vyrazene_otazky": [
-            "q126",
-            "q127",
-            "q128",
-            "q129",
-            "q130"
-        ],
-        "puvodni_souhrn_vse": {
-            "vektor": {
-                "n": 192,
-                "hit1": 0.6823,
-                "hit1_ci95": [
-                    0.6146,
-                    0.75
-                ],
-                "hit5": 0.8333,
-                "hit5_ci95": [
-                    0.776,
-                    0.8854
-                ],
-                "recall5": 0.7613,
-                "recall5_ci95": [
-                    0.704,
-                    0.8168
-                ],
-                "mrr": 0.7541,
-                "mrr_ci95": [
-                    0.6988,
-                    0.8074
-                ]
-            },
-            "vektor_bez_nadpisu": {
-                "n": 192,
-                "hit1": 0.651,
-                "hit1_ci95": [
-                    0.5833,
-                    0.7188
-                ],
-                "hit5": 0.8125,
-                "hit5_ci95": [
-                    0.7552,
-                    0.8646
-                ],
-                "recall5": 0.724,
-                "recall5_ci95": [
-                    0.6667,
-                    0.7804
-                ],
-                "mrr": 0.7198,
-                "mrr_ci95": [
-                    0.6618,
-                    0.7764
-                ]
-            },
-            "fulltext": {
-                "n": 192,
-                "hit1": 0.4167,
-                "hit1_ci95": [
-                    0.349,
-                    0.4896
-                ],
-                "hit5": 0.7188,
-                "hit5_ci95": [
-                    0.6563,
-                    0.7813
-                ],
-                "recall5": 0.5972,
-                "recall5_ci95": [
-                    0.5373,
-                    0.658
-                ],
-                "mrr": 0.54,
-                "mrr_ci95": [
-                    0.4807,
-                    0.6005
-                ]
-            },
-            "fulltext_tvary": {
-                "n": 192,
-                "hit1": 0.3281,
-                "hit1_ci95": [
-                    0.2604,
-                    0.3958
-                ],
-                "hit5": 0.6667,
-                "hit5_ci95": [
-                    0.599,
-                    0.7344
-                ],
-                "recall5": 0.553,
-                "recall5_ci95": [
-                    0.4922,
-                    0.6155
-                ],
-                "mrr": 0.4572,
-                "mrr_ci95": [
-                    0.3995,
-                    0.5155
-                ]
-            },
-            "hybrid": {
-                "n": 192,
-                "hit1": 0.5625,
-                "hit1_ci95": [
-                    0.4896,
-                    0.6354
-                ],
-                "hit5": 0.7917,
-                "hit5_ci95": [
-                    0.7344,
-                    0.849
-                ],
-                "recall5": 0.7101,
-                "recall5_ci95": [
-                    0.6519,
-                    0.7665
-                ],
-                "mrr": 0.6679,
-                "mrr_ci95": [
-                    0.6119,
-                    0.7229
-                ]
-            },
-            "hybrid_simple": {
-                "n": 192,
-                "hit1": 0.5625,
-                "hit1_ci95": [
-                    0.4948,
-                    0.6354
-                ],
-                "hit5": 0.8021,
-                "hit5_ci95": [
-                    0.7448,
-                    0.8542
-                ],
-                "recall5": 0.7127,
-                "recall5_ci95": [
-                    0.6571,
-                    0.7674
-                ],
-                "mrr": 0.671,
-                "mrr_ci95": [
-                    0.616,
-                    0.7269
-                ]
-            },
-            "hybrid_rerank": {
-                "n": 192,
-                "hit1": 0.776,
-                "hit1_ci95": [
-                    0.7188,
-                    0.8333
-                ],
-                "hit5": 0.9271,
-                "hit5_ci95": [
-                    0.8854,
-                    0.9635
-                ],
-                "recall5": 0.8793,
-                "recall5_ci95": [
-                    0.8385,
-                    0.9193
-                ],
-                "mrr": 0.8348,
-                "mrr_ci95": [
-                    0.7898,
-                    0.8804
-                ]
-            }
-        }
-    }
+    ]
 }

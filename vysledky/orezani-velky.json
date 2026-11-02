@@ -1,5 +1,5 @@
 {
-    "zmereno": "2026-11-01T16:33:48+00:00",
+    "zmereno": "2026-11-02T17:12:05+00:00",
     "popis": "E5: tiché ořezání vstupu v Ollamě (embed a chat).",
     "embed": {
         "model": "bge-m3",
@@ -30,7 +30,7 @@
                     "pravidlo_ze_system_promptu_prezilo": true,
                     "fakt_z_prvniho_uryvku_prezil": true,
                     "odpoved": "heslo: PELIKÁN; kód: KORMORÁN",
-                    "wall_ms": 9164.6
+                    "wall_ms": 9121.2
                 },
                 "num_ctx_32768": {
                     "prompt_tokens": 159,
@@ -38,7 +38,7 @@
                     "pravidlo_ze_system_promptu_prezilo": true,
                     "fakt_z_prvniho_uryvku_prezil": true,
                     "odpoved": "heslo: PELIKÁN; kód: KORMORÁN",
-                    "wall_ms": 9449.0
+                    "wall_ms": 9424.8
                 }
             },
             {
@@ -49,7 +49,7 @@
                     "pravidlo_ze_system_promptu_prezilo": true,
                     "fakt_z_prvniho_uryvku_prezil": true,
                     "odpoved": "heslo: PELIKÁN; kód: KORMORÁN",
-                    "wall_ms": 9620.4
+                    "wall_ms": 9332.8
                 },
                 "num_ctx_32768": {
                     "prompt_tokens": 825,
@@ -57,7 +57,7 @@
                     "pravidlo_ze_system_promptu_prezilo": true,
                     "fakt_z_prvniho_uryvku_prezil": true,
                     "odpoved": "heslo: PELIKÁN; kód: KORMORÁN",
-                    "wall_ms": 10453.8
+                    "wall_ms": 10203.8
                 }
             },
             {
@@ -68,7 +68,7 @@
                     "pravidlo_ze_system_promptu_prezilo": true,
                     "fakt_z_prvniho_uryvku_prezil": true,
                     "odpoved": "heslo: PELIKÁN; kód: KORMORÁN",
-                    "wall_ms": 11193.0
+                    "wall_ms": 10867.3
                 },
                 "num_ctx_32768": {
                     "prompt_tokens": 2244,
@@ -76,7 +76,7 @@
                     "pravidlo_ze_system_promptu_prezilo": true,
                     "fakt_z_prvniho_uryvku_prezil": true,
                     "odpoved": "heslo: PELIKÁN; kód: KORMORÁN",
-                    "wall_ms": 11944.1
+                    "wall_ms": 11900.6
                 }
             },
             {
@@ -87,7 +87,7 @@
                     "pravidlo_ze_system_promptu_prezilo": false,
                     "fakt_z_prvniho_uryvku_prezil": false,
                     "odpoved": "heslo: …; kód: …",
-                    "wall_ms": 11159.8
+                    "wall_ms": 10555.0
                 },
                 "num_ctx_32768": {
                     "prompt_tokens": 4174,
@@ -95,7 +95,7 @@
                     "pravidlo_ze_system_promptu_prezilo": true,
                     "fakt_z_prvniho_uryvku_prezil": true,
                     "odpoved": "heslo: PELIKÁN; kód: KORMORÁN",
-                    "wall_ms": 14152.9
+                    "wall_ms": 14030.6
                 }
             },
             {
@@ -106,7 +106,7 @@
                     "pravidlo_ze_system_promptu_prezilo": false,
                     "fakt_z_prvniho_uryvku_prezil": false,
                     "odpoved": "Na základě poskytnutého textu nelze odpovědět na tvé otázky, protože text neobsahuje žádné informace o heslech, kódech pro slevy ani o množstevních slevách.\n\nheslo: není v textu; kód: není v textu",
-                    "wall_ms": 13672.1
+                    "wall_ms": 13388.5
                 },
                 "num_ctx_32768": {
                     "prompt_tokens": 6990,
@@ -114,7 +114,7 @@
                     "pravidlo_ze_system_promptu_prezilo": true,
                     "fakt_z_prvniho_uryvku_prezil": true,
                     "odpoved": "heslo: PELIKÁN; kód: KORMORÁN",
-                    "wall_ms": 17517.2
+                    "wall_ms": 16873.3
                 }
             }
         ]

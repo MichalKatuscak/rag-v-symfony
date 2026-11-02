@@ -1,7 +1,8 @@
 {
-    "zmereno": "2026-11-01T16:40:24+00:00",
+    "zmereno": "2026-11-02T17:18:28+00:00",
     "popis": "E6: přeindexování změněného dokumentu doprava s deterministickými ID úryvků (UUID v5) a mazáním chybějících.",
     "otazka": "Za jak dlouho odešlete pákový kávovar?",
+    "varianta_hledani": "vektor",
     "model": "gemma4:e2b",
     "puvodni": {
         "uryvku": 8,
@@ -10,21 +11,26 @@
         "s_129_kc": 1,
         "s_139_kc": 0,
         "odpoved": {
-            "text": "Nevím",
-            "citace": [],
+            "text": "Kávovar odesíláme do 5 pracovních dnů od zaplacení, u dobírky do 5 pracovních dnů od potvrzení objednávky.",
+            "citace": [
+                {
+                    "usek": "U1",
+                    "citat": "Kávovar proto odesíláme do 5 pracovních dnů od zaplacení, u dobírky do 5 pracovních dnů od potvrzení objednávky."
+                }
+            ],
             "kontrola": {
                 "neplatne_useky": [],
                 "citaty_nenalezene": [],
                 "cisla_mimo_citace": [],
-                "bez_citace": true,
-                "v_poradku": false
+                "bez_citace": false,
+                "v_poradku": true
             },
             "top": [
+                "doprava#kavovary",
+                "caste-dotazy#kdy-mi-prijde-kavovar",
+                "navod-prvni-spusteni#vybaleni-a-umisteni-kavovaru",
                 "servis-a-opravy#jak-dlouho-oprava-trva",
-                "navod-prvni-spusteni#proplachnuti-pred-prvnim-pouzitim",
-                "kavovar-espresso-profi-410#doprava-kavovaru-profi-410",
-                "kavovar-espresso-solo-210#doprava-kavovaru-solo-210",
-                "kavovar-espresso-duo-320#doprava-kavovaru-duo-320"
+                "kavovar-espresso-profi-410#doprava-kavovaru-profi-410"
             ]
         }
     },
@@ -35,21 +41,26 @@
         "s_129_kc": 0,
         "s_139_kc": 1,
         "odpoved": {
-            "text": "nevim",
-            "citace": [],
+            "text": "Kávovar odesíláme do 7 pracovních dnů od zaplacení, u dobírky do 7 pracovních dnů od potvrzení objednávky.",
+            "citace": [
+                {
+                    "usek": "U1",
+                    "citat": "Kávovar proto odesíláme do 7 pracovních dnů od zaplacení, u dobírky do 7 pracovních dnů od potvrzení objednávky."
+                }
+            ],
             "kontrola": {
                 "neplatne_useky": [],
                 "citaty_nenalezene": [],
                 "cisla_mimo_citace": [],
-                "bez_citace": true,
-                "v_poradku": false
+                "bez_citace": false,
+                "v_poradku": true
             },
             "top": [
+                "doprava#kavovary",
+                "caste-dotazy#kdy-mi-prijde-kavovar",
+                "navod-prvni-spusteni#vybaleni-a-umisteni-kavovaru",
                 "servis-a-opravy#jak-dlouho-oprava-trva",
-                "navod-prvni-spusteni#proplachnuti-pred-prvnim-pouzitim",
-                "kavovar-espresso-profi-410#doprava-kavovaru-profi-410",
-                "kavovar-espresso-solo-210#doprava-kavovaru-solo-210",
-                "kavovar-espresso-duo-320#doprava-kavovaru-duo-320"
+                "kavovar-espresso-profi-410#doprava-kavovaru-profi-410"
             ]
         }
     },
