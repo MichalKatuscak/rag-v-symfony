@@ -90,6 +90,10 @@ Hybrid byl horší než samotný vektor, český slovník fulltextu uškodil, di
 |---|---|---|---|
 | gemma4:e2b / vektor | 70 | 12 z 21 | 17 z 26 |
 | gemma4:12b / vektor | 79 | 11 z 12 | 23 z 26 |
+| gemma4:e2b / hybrid + reranker | 71 | 1 z 20 | 16 z 26 |
+| gemma4:12b / hybrid + reranker | **87** | **0 z 4** | 23 z 26 |
+
+S rerankerem měl velký model správný úryvek v kontextu u 90 z 91 otázek a žádná jeho chyba nevznikla v hledání. Malý model se nezlepšil, jeho chyby se jen přesunuly z hledání do modelu. Odpovědi s rerankerem jsou ze samostatného běhu (`bin/mereni odpovedi-rerank`), časy z něj se s ostatními nedají srovnávat.
 
 **Tiché chyby:** `/api/embed` s bge-m3 zpracuje jen 2 048 tokenů, dokud nenastavíte `num_ctx` i `num_batch`; `/api/chat` bez `num_ctx` ořízne dlouhý prompt i se system promptem; Symfony AI Store 1.0.0-BETA1 po přeindexování drží starou i novou verzi dokumentu; HNSW s filtrem bez `iterative_scan` vrátí místo 10 řádků průměrně 3,9.
 
